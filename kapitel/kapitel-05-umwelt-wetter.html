@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deutsch B1 — Umwelt, Wetter &amp; Grammatik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef;
+  --panel:#ffffff;
+  --panel-2:#fbfaf7;
+  --ink:#1d2430;
+  --ink-2:#56606f;
+  --ink-3:#8b95a3;
+  --line:#e2ddd3;
+  --accent:#2f6f5e;
+  --accent-soft:#e3efea;
+  --accent-2:#b4531f;
+  --accent-2-soft:#fbeade;
+  --ok:#1f7a45;
+  --ok-bg:#e4f4ea;
+  --bad:#b32d2d;
+  --bad-bg:#fbe6e4;
+  --shadow:0 1px 2px rgba(29,36,48,.06), 0 8px 24px rgba(29,36,48,.05);
+  --radius:14px;
+}
+html[data-theme="dark"]{
+  --bg:#14171c;
+  --panel:#1c2026;
+  --panel-2:#20252c;
+  --ink:#e8eaed;
+  --ink-2:#aab3bf;
+  --ink-3:#7d8794;
+  --line:#2e343d;
+  --accent:#5fbfa3;
+  --accent-soft:#1d2e2a;
+  --accent-2:#e2905c;
+  --accent-2-soft:#2e241d;
+  --ok:#5bc98a;
+  --ok-bg:#17301f;
+  --bad:#f08a84;
+  --bad-bg:#331b1a;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px 120px}
+
+/* ---------- header ---------- */
+header.top{
+  padding:40px 0 18px;
+}
+.kicker{
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent-2);font-weight:700;margin:0 0 6px;
+}
+h1{
+  font-family:Fraunces,Georgia,serif;
+  font-size:clamp(28px,5vw,42px);
+  line-height:1.1;margin:0 0 10px;font-weight:600;letter-spacing:-.01em;
+}
+.sub{color:var(--ink-2);margin:0;max-width:62ch}
+
+/* ---------- nav ---------- */
+nav.tabs{
+  position:sticky;top:0;z-index:40;
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  margin:22px -20px 0;padding:8px 20px;
+}
+.tabs-inner{max-width:1000px;margin:0 auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.tabs-inner::-webkit-scrollbar{display:none}
+.tab{
+  flex:0 0 auto;border:0;background:transparent;color:var(--ink-2);
+  font:inherit;font-size:14px;font-weight:600;cursor:pointer;
+  padding:9px 13px;border-radius:9px;white-space:nowrap;transition:.15s;
+}
+.tab:hover{color:var(--ink);background:var(--panel-2)}
+.tab.active{background:var(--accent);color:#fff}
+
+/* ---------- sections ---------- */
+section.view{display:none;padding-top:28px;animation:fade .25s ease}
+section.view.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+
+h2{
+  font-family:Fraunces,Georgia,serif;font-weight:600;
+  font-size:clamp(22px,3.4vw,30px);margin:34px 0 4px;letter-spacing:-.01em;
+}
+h2:first-child{margin-top:0}
+h3{
+  font-size:16px;font-weight:700;margin:26px 0 10px;
+  letter-spacing:.01em;
+}
+h3 .num{
+  display:inline-grid;place-items:center;width:22px;height:22px;border-radius:6px;
+  background:var(--accent);color:#fff;font-size:12px;margin-right:8px;vertical-align:1px;
+}
+.lede{color:var(--ink-2);margin:0 0 18px;max-width:70ch}
+
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;margin:16px 0;box-shadow:var(--shadow);
+}
+.card.flat{box-shadow:none;background:var(--panel-2)}
+.note{
+  border-left:3px solid var(--accent-2);background:var(--accent-2-soft);
+  border-radius:0 10px 10px 0;padding:12px 16px;margin:16px 0;font-size:15px;
+}
+.note b{color:var(--accent-2)}
+.rule{
+  background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 25%,transparent);
+  border-radius:10px;padding:14px 16px;margin:14px 0;
+}
+.rule .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--accent);display:block;margin-bottom:6px}
+
+de, .de{font-weight:600;color:var(--ink)}
+.ex{
+  font-family:Fraunces,Georgia,serif;font-size:17px;line-height:1.75;
+  margin:4px 0;
+}
+.ex .hl{color:var(--accent-2);font-weight:700}
+.ex .hl2{color:var(--accent);font-weight:700}
+.arrow{color:var(--ink-3);margin:0 7px}
+
+/* ---------- tables ---------- */
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px;margin:12px 0}
+.tbl th,.tbl td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--panel-2);font-weight:700;font-size:13px;letter-spacing:.02em}
+.tbl td.k{font-weight:600;background:var(--panel-2);white-space:nowrap}
+.tbl .end{color:var(--accent-2);font-weight:700}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* ---------- tooltip ---------- */
+.tt{
+  border-bottom:1.5px dotted var(--accent);cursor:help;position:relative;
+}
+.tt::after{
+  content:attr(data-es);
+  position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px);
+  background:var(--ink);color:var(--bg);
+  font-family:Inter,sans-serif;font-size:13px;font-weight:500;line-height:1.4;
+  padding:7px 11px;border-radius:8px;white-space:normal;width:max-content;max-width:240px;
+  opacity:0;pointer-events:none;transition:.16s;z-index:60;
+  box-shadow:0 6px 20px rgba(0,0,0,.2);text-align:center;
+}
+.tt::before{
+  content:"";position:absolute;left:50%;bottom:calc(100% + 3px);transform:translateX(-50%) translateY(4px);
+  border:5px solid transparent;border-top-color:var(--ink);opacity:0;transition:.16s;z-index:60;pointer-events:none;
+}
+.tt:hover::after,.tt:hover::before,.tt.show::after,.tt.show::before{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ---------- exercises ---------- */
+.ex-block{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;margin:18px 0;box-shadow:var(--shadow);
+}
+.ex-head{display:flex;align-items:baseline;gap:10px;margin-bottom:4px;flex-wrap:wrap}
+.ex-head .tag{
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  background:var(--accent);color:#fff;padding:3px 8px;border-radius:5px;
+}
+.ex-head .tag.b{background:var(--accent-2)}
+.ex-head h4{margin:0;font-size:16px;font-weight:700}
+.ex-hint{color:var(--ink-3);font-size:13.5px;margin:2px 0 14px}
+
+ol.q{margin:0;padding-left:26px}
+ol.q>li{margin:0 0 13px;line-height:2.05;font-size:15.5px}
+ol.q>li::marker{color:var(--ink-3);font-weight:600;font-size:13px}
+
+input.gap{
+  font:inherit;font-size:15px;font-weight:600;
+  border:0;border-bottom:2px solid var(--line);
+  background:var(--panel-2);color:var(--ink);
+  padding:3px 8px;border-radius:5px 5px 0 0;
+  width:150px;transition:.15s;outline:none;
+}
+input.gap:focus{border-bottom-color:var(--accent);background:var(--accent-soft)}
+input.gap.w-s{width:90px}
+input.gap.w-l{width:230px}
+input.gap.ok{background:var(--ok-bg);border-bottom-color:var(--ok);color:var(--ok)}
+input.gap.bad{background:var(--bad-bg);border-bottom-color:var(--bad);color:var(--bad)}
+textarea.gap{
+  font:inherit;font-size:15px;width:100%;min-height:52px;resize:vertical;
+  border:1px solid var(--line);border-radius:9px;background:var(--panel-2);
+  color:var(--ink);padding:9px 11px;outline:none;margin-top:5px;line-height:1.55;
+}
+textarea.gap:focus{border-color:var(--accent);background:var(--accent-soft)}
+textarea.gap.ok{background:var(--ok-bg);border-color:var(--ok)}
+textarea.gap.bad{background:var(--bad-bg);border-color:var(--bad)}
+.cue{color:var(--ink-3);font-size:14px;font-style:italic}
+.sol{
+  display:none;margin-top:4px;font-size:14px;color:var(--ok);font-weight:600;
+}
+.sol.show{display:block}
+.sol::before{content:"✓ ";}
+
+/* multiple choice */
+.mc{display:inline-flex;gap:6px;flex-wrap:wrap;vertical-align:middle;margin:0 4px}
+.mc label{
+  font-size:14px;font-weight:600;padding:4px 11px;border-radius:7px;
+  border:1.5px solid var(--line);background:var(--panel-2);cursor:pointer;transition:.13s;
+  user-select:none;
+}
+.mc label:hover{border-color:var(--accent)}
+.mc input{position:absolute;opacity:0;width:0;height:0}
+.mc input:checked+span{color:#fff}
+.mc label:has(input:checked){background:var(--accent);border-color:var(--accent);color:#fff}
+.mc.graded label.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.mc.graded label.bad{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+
+/* buttons */
+.btns{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px;align-items:center}
+button.b{
+  font:inherit;font-size:14px;font-weight:600;cursor:pointer;
+  border:1.5px solid var(--line);background:var(--panel-2);color:var(--ink);
+  padding:8px 16px;border-radius:9px;transition:.13s;
+}
+button.b:hover{border-color:var(--accent);color:var(--accent)}
+button.b.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+button.b.primary:hover{filter:brightness(1.08);color:#fff}
+button.b.ghost{background:transparent;border-color:transparent;color:var(--ink-3)}
+button.b.ghost:hover{color:var(--accent);border-color:var(--line)}
+.score{
+  font-size:14px;font-weight:700;padding:6px 13px;border-radius:8px;
+  background:var(--panel-2);border:1px solid var(--line);
+}
+.score.good{background:var(--ok-bg);color:var(--ok);border-color:var(--ok)}
+.score.mid{background:var(--accent-2-soft);color:var(--accent-2);border-color:var(--accent-2)}
+.score.poor{background:var(--bad-bg);color:var(--bad);border-color:var(--bad)}
+
+/* matching */
+.match{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:700px){.match{grid-template-columns:1fr;gap:14px}}
+.match .col h5{margin:0 0 9px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.mitem{
+  display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;
+  font:inherit;font-size:14.5px;line-height:1.45;
+  border:1.5px solid var(--line);background:var(--panel-2);color:var(--ink);
+  padding:10px 12px;border-radius:10px;margin-bottom:8px;cursor:pointer;transition:.13s;
+}
+.mitem:hover{border-color:var(--accent)}
+.mitem.sel{border-color:var(--accent);background:var(--accent-soft);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+.mitem.used{opacity:.5}
+.mitem .idx{
+  flex:0 0 auto;width:22px;height:22px;border-radius:6px;display:grid;place-items:center;
+  background:var(--ink-3);color:var(--panel);font-size:12px;font-weight:700;
+}
+.mitem .slot{
+  flex:0 0 auto;margin-left:auto;min-width:26px;height:24px;border-radius:6px;
+  border:1.5px dashed var(--line);display:grid;place-items:center;
+  font-size:12.5px;font-weight:700;color:var(--ink-3);padding:0 5px;
+}
+.mitem .slot.filled{border-style:solid;border-color:var(--accent);background:var(--accent);color:#fff}
+.mitem.ok{border-color:var(--ok);background:var(--ok-bg)}
+.mitem.ok .slot{background:var(--ok);border-color:var(--ok);color:#fff}
+.mitem.bad{border-color:var(--bad);background:var(--bad-bg)}
+.mitem.bad .slot{background:var(--bad);border-color:var(--bad);color:#fff}
+
+/* vocab grid */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:9px;margin:12px 0}
+.vitem{
+  background:var(--panel-2);border:1px solid var(--line);border-radius:10px;
+  padding:9px 12px;display:flex;align-items:center;gap:8px;
+}
+.vitem .w{font-weight:600;font-size:15px;flex:1}
+.vitem .es{display:none;font-weight:400;font-size:13px;color:var(--ink-3);margin-top:1px}
+.vgrid.show-es .es{display:block}
+.vtoggle{display:flex;align-items:center;gap:10px;margin:14px 0 2px;flex-wrap:wrap}
+.spk{
+  flex:0 0 auto;border:0;background:transparent;cursor:pointer;color:var(--ink-3);
+  font-size:15px;padding:3px;border-radius:6px;line-height:1;transition:.13s;
+}
+.spk:hover{color:var(--accent);background:var(--accent-soft)}
+
+.phrases{margin:10px 0;padding:0;list-style:none}
+.phrases li{
+  padding:8px 0 8px 20px;border-bottom:1px dashed var(--line);position:relative;font-size:15.5px;
+}
+.phrases li:last-child{border-bottom:0}
+.phrases li::before{content:"›";position:absolute;left:4px;color:var(--accent);font-weight:700}
+
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:760px){.cols2{grid-template-columns:1fr}}
+
+/* ---------- flashcards ---------- */
+.fc-setup{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-end;margin-bottom:18px}
+.fgroup{display:flex;flex-direction:column;gap:7px}
+.fgroup .flbl{font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:700;color:var(--ink-3)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{
+  font:inherit;font-size:13.5px;font-weight:600;padding:6px 13px;border-radius:999px;
+  border:1.5px solid var(--line);background:var(--panel-2);color:var(--ink-2);cursor:pointer;transition:.13s;
+}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+
+.fc-stage{margin-top:6px}
+.pbar{height:6px;background:var(--line);border-radius:999px;overflow:hidden;margin-bottom:14px}
+.pbar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.fc-meta{display:flex;justify-content:space-between;font-size:13px;color:var(--ink-3);margin-bottom:12px;font-weight:600}
+
+.flashcard{
+  background:var(--panel);border:1px solid var(--line);border-radius:18px;
+  min-height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:32px 26px;box-shadow:var(--shadow);cursor:pointer;position:relative;
+  transition:.18s;user-select:none;
+}
+.flashcard:hover{border-color:var(--accent)}
+.fc-dir{
+  position:absolute;top:13px;left:16px;font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;font-weight:700;color:var(--ink-3);
+}
+.fc-spk{position:absolute;top:9px;right:12px;font-size:19px}
+.fc-front{font-family:Fraunces,Georgia,serif;font-size:clamp(24px,4.6vw,34px);font-weight:600;line-height:1.25}
+.fc-back{
+  margin-top:18px;padding-top:18px;border-top:1px solid var(--line);
+  font-size:clamp(18px,3.4vw,23px);color:var(--accent);font-weight:600;width:100%;max-width:440px;
+}
+.fc-hint-ex{margin-top:11px;font-size:14px;color:var(--ink-3);font-style:italic;line-height:1.5}
+.fc-tap{color:var(--ink-3);font-size:13.5px;margin-top:16px}
+.fc-actions{display:flex;gap:10px;margin-top:14px}
+.fc-actions button{flex:1;padding:14px;font-size:15px;font-weight:700;border-radius:11px;cursor:pointer;font-family:inherit;border:1.5px solid}
+.fc-no{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.fc-yes{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.fc-actions button:hover{filter:brightness(.97)}
+.fc-done{text-align:center;padding:40px 20px}
+.fc-done .big{font-family:Fraunces,serif;font-size:34px;font-weight:600;margin-bottom:6px}
+.kbd{
+  font-family:'JetBrains Mono',monospace;font-size:11.5px;background:var(--panel-2);
+  border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:1px 5px;color:var(--ink-2);
+}
+
+/* theme toggle */
+.theme-btn{
+  position:fixed;right:18px;bottom:18px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);cursor:pointer;font-size:18px;
+  box-shadow:var(--shadow);display:grid;place-items:center;
+}
+footer{margin-top:50px;padding-top:20px;border-top:1px solid var(--line);color:var(--ink-3);font-size:13px}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="kicker">Deutsch B1 · Lektion Umwelt &amp; Wetter</p>
+  <h1>Komparativ, Finalsätze, Wetter und Umwelt</h1>
+  <p class="sub">Explicación, ejercicios interactivos y tarjetas de vocabulario. Pasa el cursor sobre las palabras <span class="tt" data-es="subrayadas con puntos — así">markiert</span> para ver la traducción en ese contexto.</p>
+</header>
+
+<nav class="tabs">
+  <div class="tabs-inner" id="tabs">
+    <button class="tab active" data-view="v1">1 · Komparativ &amp; Superlativ</button>
+    <button class="tab" data-view="v2">2 · damit / um … zu</button>
+    <button class="tab" data-view="v3">3 · Deklination</button>
+    <button class="tab" data-view="v4">4 · Das Wetter</button>
+    <button class="tab" data-view="v5">5 · Umwelt &amp; Redemittel</button>
+    <button class="tab" data-view="v6">6 · Karteikarten</button>
+    <button class="tab" data-view="v7">7 · Mini-Test</button>
+  </div>
+</nav>
+
+<!-- ============================ VIEW 1 ============================ -->
+<section class="view active" id="v1">
+  <h2>Komparativ und Superlativ vor Nomen</h2>
+  <p class="lede">La regla central: si el adjetivo va <strong>antes de un sustantivo</strong>, no basta con poner <i>-er</i> o <i>-st</i>; hay que añadir además la <strong>terminación de declinación</strong> normal.</p>
+
+  <div class="card">
+    <h3>La diferencia que importa</h3>
+    <div class="cols2">
+      <div>
+        <div class="rule">
+          <span class="lbl">Sin sustantivo detrás → sin terminación</span>
+          <p class="ex">Der <span class="tt" data-es="el lavavajillas">Geschirrspüler</span> ist <span class="hl">besser</span>.</p>
+          <p class="ex"><span class="tt" data-es="las botellas retornables / reutilizables">Mehrwegflaschen</span> sind <span class="hl">am besten</span>.</p>
+        </div>
+      </div>
+      <div>
+        <div class="rule" style="background:var(--accent-2-soft);border-color:color-mix(in srgb,var(--accent-2) 25%,transparent)">
+          <span class="lbl" style="color:var(--accent-2)">Con sustantivo detrás → + terminación</span>
+          <p class="ex">Der Geschirrspüler ist die <span class="hl">besser<u>e</u></span> <span class="tt" data-es="la elección, la opción">Wahl</span>.</p>
+          <p class="ex">Mehrwegflaschen sind die <span class="hl">best<u>e</u></span> <span class="tt" data-es="la alternativa">Alternative</span>.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin:14px 0 0;font-size:15px"><strong>Fórmula:</strong> <code style="font-family:'JetBrains Mono',monospace;background:var(--panel-2);padding:3px 8px;border-radius:6px;border:1px solid var(--line)">Stamm + er / st + Deklinationsendung</code></p>
+    <p style="margin:8px 0 0;font-size:15px;color:var(--ink-2)">Las terminaciones de declinación son <strong>exactamente las mismas</strong> que las del adjetivo en forma básica (sección 3). Lo único que cambia es que el adjetivo ya trae <i>-er</i> o <i>-st</i> pegado.</p>
+  </div>
+
+  <div class="note">
+    <b>¡Atención!</b> <span class="de">mehr</span> y <span class="de">weniger</span> <strong>nunca</strong> llevan terminación.<br>
+    <span class="ex">Der Geschirrspüler <span class="tt" data-es="consume, gasta">verbraucht</span> <span class="hl">weniger</span> Wasser.</span> · <span class="ex">Wir brauchen <span class="hl">mehr</span> Zeit.</span><br>
+    <span style="color:var(--bad)">✗ wenigeres Wasser · ✗ mehre Zeit</span>
+  </div>
+
+  <h3><span class="num">A</span>Cómo se forman</h3>
+  <div class="scroll">
+  <table class="tbl">
+    <tr><th>Tipo</th><th>Grundform</th><th>Komparativ</th><th>Superlativ (vor Nomen)</th></tr>
+    <tr><td class="k">Normal</td><td>modern</td><td>modern<span class="end">er</span></td><td>der modern<span class="end">ste</span></td></tr>
+    <tr><td class="k">+ Umlaut</td><td>alt, jung, lang, kurz, warm, kalt, stark</td><td>ält<span class="end">er</span></td><td>der ält<span class="end">este</span></td></tr>
+    <tr><td class="k">-d, -t, -s, -ß, -z, -sch → <b>-est</b></td><td>alt, heiß, kurz, hübsch</td><td>heiß<span class="end">er</span></td><td>der heiß<span class="end">este</span></td></tr>
+    <tr><td class="k">-el, -er → pierde la e</td><td>teuer, dunkel, teuer</td><td>teu<span class="end">rer</span></td><td>der teu<span class="end">erste</span></td></tr>
+  </table>
+  </div>
+
+  <h3><span class="num">B</span>Irregulares (hay que saberlos de memoria)</h3>
+  <div class="scroll">
+  <table class="tbl">
+    <tr><th>Grundform</th><th>Komparativ</th><th>Superlativ</th><th>Ejemplo vor Nomen</th></tr>
+    <tr><td class="k">gut</td><td>besser</td><td>best-</td><td>die <b>beste</b> Alternative</td></tr>
+    <tr><td class="k">viel</td><td><b>mehr</b> (sin terminación)</td><td>meist-</td><td>die <b>meisten</b> Leute</td></tr>
+    <tr><td class="k">wenig</td><td><b>weniger</b> (sin terminación)</td><td>wenigst-</td><td>das <b>wenigste</b> Wasser</td></tr>
+    <tr><td class="k">gern</td><td>lieber</td><td>liebst-</td><td>mein <b>liebstes</b> Geschäft</td></tr>
+    <tr><td class="k">hoch</td><td>höher <span class="cue">(pierde la c)</span></td><td>höchst-</td><td>die <b>höchste</b> Note</td></tr>
+    <tr><td class="k">nah</td><td>näher</td><td>nächst-</td><td>die <b>nächste</b> Haltestelle</td></tr>
+    <tr><td class="k">groß</td><td>größer</td><td>größt-</td><td>das <b>größte</b> Geschäft</td></tr>
+    <tr><td class="k">teuer</td><td>teurer</td><td>teuerst-</td><td>der <b>teuerste</b> Saft</td></tr>
+  </table>
+  </div>
+
+  <div class="note">
+    <b>Truco útil:</b> el superlativo delante de un sustantivo va casi siempre con <strong>artículo determinado</strong> (<i>der/die/das</i>) o posesivo, porque es único por definición. Por eso la terminación suele ser <b>-e</b> (nominativo) o <b>-en</b> (los demás casos).
+  </div>
+
+  <!-- Übung 1 -->
+  <div class="ex-block" id="ex1">
+    <div class="ex-head"><span class="tag">Übung 1</span><h4>Komparativ / Superlativ vor Nomen</h4></div>
+    <p class="ex-hint">Escribe el adjetivo con su terminación correcta. Mayúsculas y minúsculas dan igual.</p>
+    <ol class="q">
+      <li>Der Geschirrspüler ist die <input class="gap" data-answer="bessere"> <span class="cue">(gut, Komp.)</span> Wahl.</li>
+      <li>Mehrwegflaschen sind die <input class="gap" data-answer="beste"> <span class="cue">(gut, Superl.)</span> Alternative.</li>
+      <li>Ich hätte gern ein <input class="gap" data-answer="moderneres"> <span class="cue">(modern, Komp.)</span> Handy.</li>
+      <li>Das ist der <input class="gap" data-answer="teuerste"> <span class="cue">(teuer, Superl.)</span> Saft.</li>
+      <li>Ich suche das <input class="gap w-l" data-answer="umweltfreundlichste"> <span class="cue">(umweltfreundlich, Superl.)</span> T-Shirt.</li>
+      <li>Mit dem <input class="gap" data-answer="ältesten|aeltesten"> <span class="cue">(alt, Superl.)</span> Auto fahren wir nicht in den Urlaub.</li>
+      <li>Wir brauchen <input class="gap w-s" data-answer="mehr"> <span class="cue">(viel, Komp.)</span> Zeit.</li>
+      <li>Der Geschirrspüler verbraucht <input class="gap" data-answer="weniger"> <span class="cue">(wenig, Komp.)</span> Wasser.</li>
+      <li>Sie wohnt in einem <input class="gap" data-answer="größeren|groesseren|grösseren"> <span class="cue">(groß, Komp.)</span> Haus als ich.</li>
+      <li>Das ist die <input class="gap" data-answer="nächste|naechste"> <span class="cue">(nah, Superl.)</span> Bushaltestelle.</li>
+      <li>Er hat die <input class="gap" data-answer="höchste|hoechste"> <span class="cue">(hoch, Superl.)</span> Note bekommen.</li>
+      <li>Ich kaufe gern im <input class="gap" data-answer="neuesten"> <span class="cue">(neu, Superl.)</span> Geschäft ein.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex1')">Prüfen</button>
+      <button class="b" onclick="showSol('ex1')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex1')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex1"></span>
+    </div>
+  </div>
+
+  <!-- Übung 2 -->
+  <div class="ex-block" id="ex2">
+    <div class="ex-head"><span class="tag">Übung 2</span><h4>¿Lleva terminación o no?</h4></div>
+    <p class="ex-hint">Elige la forma correcta. Cuidado con <i>mehr</i> y <i>weniger</i>.</p>
+    <ol class="q">
+      <li>Mein neues Auto verbraucht
+        <span class="mc" data-correct="weniger">
+          <label><input type="radio" name="m2a" value="weniger"><span>weniger</span></label>
+          <label><input type="radio" name="m2a" value="wenigeres"><span>wenigeres</span></label>
+        </span> Benzin.</li>
+      <li>Das ist die
+        <span class="mc" data-correct="bessere">
+          <label><input type="radio" name="m2b" value="besser"><span>besser</span></label>
+          <label><input type="radio" name="m2b" value="bessere"><span>bessere</span></label>
+        </span> Lösung für die Umwelt.</li>
+      <li>Diese Lösung ist einfach
+        <span class="mc" data-correct="besser">
+          <label><input type="radio" name="m2c" value="besser"><span>besser</span></label>
+          <label><input type="radio" name="m2c" value="bessere"><span>bessere</span></label>
+        </span>.</li>
+      <li>Wir haben
+        <span class="mc" data-correct="mehr">
+          <label><input type="radio" name="m2d" value="mehr"><span>mehr</span></label>
+          <label><input type="radio" name="m2d" value="mehre"><span>mehre</span></label>
+        </span> Zeit als gestern.</li>
+      <li>In der Stadt gibt es die
+        <span class="mc" data-correct="meisten">
+          <label><input type="radio" name="m2e" value="meisten"><span>meisten</span></label>
+          <label><input type="radio" name="m2e" value="mehr"><span>mehr</span></label>
+        </span> Fahrradwege.</li>
+      <li>Das Gemüse im Bioladen ist
+        <span class="mc" data-correct="teurer">
+          <label><input type="radio" name="m2f" value="teurer"><span>teurer</span></label>
+          <label><input type="radio" name="m2f" value="teuerer"><span>teuerer</span></label>
+        </span> als im Supermarkt.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex2')">Prüfen</button>
+      <button class="b ghost" onclick="resetBlock('ex2')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex2"></span>
+    </div>
+  </div>
+
+  <!-- Übung 3 -->
+  <div class="ex-block" id="ex3">
+    <div class="ex-head"><span class="tag b">Übung 3</span><h4>Sprechen Sie zu zweit — frases del libro</h4></div>
+    <p class="ex-hint">Completa las frases de la actividad 8a con la forma correcta.</p>
+    <ol class="q">
+      <li>Ich hätte gern ein <input class="gap" data-answer="besseres"> <span class="cue">(gut, Komp.)</span> Fahrrad.</li>
+      <li>Ich suche das <input class="gap" data-answer="günstigste|guenstigste"> <span class="cue">(günstig, Superl.)</span> T-Shirt.</li>
+      <li>Ich kaufe am liebsten im <input class="gap" data-answer="nettesten"> <span class="cue">(nett, Superl.)</span> Geschäft ein.</li>
+      <li>Die <input class="gap" data-answer="leckersten"> <span class="cue">(lecker, Superl.)</span> Säfte sind oft in Pfandflaschen.</li>
+      <li>Ich verbrauche am <input class="gap w-s" data-answer="wenigsten"> <span class="cue">(wenig, Superl.)</span> Strom in meiner Familie.</li>
+      <li>Das ist das <input class="gap w-l" data-answer="umweltfreundlichste"> <span class="cue">(umweltfreundlich, Superl.)</span> Produkt im Laden.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex3')">Prüfen</button>
+      <button class="b" onclick="showSol('ex3')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex3')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex3"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VIEW 2 ============================ -->
+<section class="view" id="v2">
+  <h2>Nebensätze mit <i>damit</i> und <i>um … zu</i></h2>
+  <p class="lede">Los dos expresan <strong>finalidad</strong> (el <i>Ziel</i>, el objetivo): responden a la pregunta <span class="de">Wozu?</span> — ¿para qué? La <strong>única</strong> diferencia es el sujeto.</p>
+
+  <div class="card">
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th style="width:38%">Aktion (Hauptsatz)</th><th>Ziel (Nebensatz)</th></tr>
+      <tr><td>Die <span class="tt" data-es="las bolsas SUNNYBAG">SUNNYBAG-Taschen</span> haben einen <span class="tt" data-es="la batería recargable">Akku</span>,</td><td><b class="de" style="color:var(--accent-2)">damit</b> man das Handy immer <b>aufladen kann</b>.</td></tr>
+      <tr><td>Viele Kunden kaufen die Taschen,</td><td><b class="de" style="color:var(--accent-2)">damit</b> sie in der Natur Strom <b>haben</b>.</td></tr>
+      <tr><td>Viele Kunden kaufen die Taschen,</td><td><b class="de" style="color:var(--accent)">um</b> in der Natur Strom <b class="de" style="color:var(--accent)">zu</b> <b>haben</b>.</td></tr>
+    </table>
+    </div>
+  </div>
+
+  <div class="cols2">
+    <div class="rule">
+      <span class="lbl">um … zu + Infinitiv</span>
+      <p style="margin:0 0 8px;font-size:15px">Solo si el sujeto es <strong>el mismo</strong> en las dos partes. El Nebensatz <strong>no tiene sujeto</strong> y el verbo va en infinitivo al final, precedido de <i>zu</i>.</p>
+      <p class="ex"><u>Ich</u> lerne Deutsch, <span class="hl2">um</span> in Deutschland <span class="hl2">zu</span> studieren.</p>
+      <p style="font-size:14px;color:var(--ink-2);margin:8px 0 0">→ El sujeto de «estudiar» también soy yo.</p>
+    </div>
+    <div class="rule" style="background:var(--accent-2-soft);border-color:color-mix(in srgb,var(--accent-2) 25%,transparent)">
+      <span class="lbl" style="color:var(--accent-2)">damit + Nebensatz</span>
+      <p style="margin:0 0 8px;font-size:15px">Se usa <strong>siempre</strong> cuando los sujetos son <strong>distintos</strong>. Lleva sujeto propio y el verbo conjugado va <strong>al final</strong>.</p>
+      <p class="ex"><u>Ich</u> erkläre es langsam, <span class="hl">damit</span> <u>du</u> es <b>verstehst</b>.</p>
+      <p style="font-size:14px;color:var(--ink-2);margin:8px 0 0">→ Yo explico, pero <i>tú</i> entiendes.</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Si los sujetos son iguales</b>, puedes usar las dos: <i>damit</i> <strong>o</strong> <i>um … zu</i>.<br>
+    <b>Si son distintos</b>, solo <i>damit</i>. Nunca <i>um … zu</i>.
+  </div>
+
+  <h3><span class="num">A</span>Detalles que suelen fallar en el examen</h3>
+  <div class="card flat">
+    <ol class="q" style="line-height:1.75">
+      <li><strong>Verbos separables:</strong> <i>zu</i> se mete <strong>dentro</strong> del verbo.<br>
+        <span class="ex">… <span class="hl2">um</span> das Handy <span class="hl2">aufzuladen</span>.</span> · <span class="ex">… <span class="hl2">um</span> die Becher <span class="hl2">zurückzubringen</span>.</span> · <span class="ex">… <span class="hl2">um</span> früh <span class="hl2">aufzustehen</span>.</span></li>
+      <li><strong>Con verbo modal</strong> (<i>können, müssen, sollen</i>) normalmente se usa <i>damit</i>, porque el modal no cabe bien en <i>um … zu</i>.<br>
+        <span class="ex">Die Taschen haben einen Akku, <span class="hl">damit</span> man das Handy aufladen <b>kann</b>.</span></li>
+      <li><strong>Coma siempre</strong> delante de <i>damit</i> y delante de <i>um</i>.</li>
+      <li><strong>Posición del verbo:</strong> con <i>damit</i>, el verbo conjugado va <strong>al final</strong> (Nebensatz normal). Con <i>um … zu</i>, el infinitivo va al final.</li>
+      <li><strong>No confundir</strong> <i>damit</i> (finalidad, «para que») con <i>damit</i> como pronombre adverbial («con eso»): <span class="ex">Ich bin nicht einverstanden <b>damit</b>.</span></li>
+    </ol>
+  </div>
+
+  <!-- Übung 4: matching -->
+  <div class="ex-block" id="ex4">
+    <div class="ex-head"><span class="tag">Übung 4</span><h4>Was passt zusammen? Ordnen Sie zu.</h4></div>
+    <p class="ex-hint">Haz clic primero en una frase de la izquierda y después en su final de la derecha.</p>
+    <div class="match">
+      <div class="col">
+        <h5>Hauptsatz</h5>
+        <div id="m-left"></div>
+      </div>
+      <div class="col">
+        <h5>Nebensatz</h5>
+        <div id="m-right"></div>
+      </div>
+    </div>
+    <div class="btns">
+      <button class="b primary" onclick="checkMatch()">Prüfen</button>
+      <button class="b" onclick="solveMatch()">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetMatch()">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex4"></span>
+    </div>
+  </div>
+
+  <!-- Übung 5 -->
+  <div class="ex-block" id="ex5">
+    <div class="ex-head"><span class="tag">Übung 5</span><h4><i>damit</i> oder <i>um … zu</i>?</h4></div>
+    <p class="ex-hint">Escribe <b>damit</b> o <b>um</b> según los sujetos. Fíjate en si ya hay un sujeto después del hueco.</p>
+    <ol class="q">
+      <li>Ich lerne Deutsch, <input class="gap w-s" data-answer="um"> in Deutschland zu studieren.</li>
+      <li>Ich erkläre es dir langsam, <input class="gap w-s" data-answer="damit"> du es verstehst.</li>
+      <li>Wir <span class="tt" data-es="separamos (la basura)">trennen</span> den Müll, <input class="gap w-s" data-answer="um"> die Umwelt zu schützen.</li>
+      <li>Die Stadt baut Radwege, <input class="gap w-s" data-answer="damit"> die Bürger weniger Auto fahren.</li>
+      <li>Er nimmt das Fahrrad, <input class="gap w-s" data-answer="um"> CO₂ zu sparen.</li>
+      <li>Sie schaltet das Licht aus, <input class="gap w-s" data-answer="damit"> die Stromrechnung niedriger wird.</li>
+      <li>SIRPLUS rettet Lebensmittel, <input class="gap w-s" data-answer="damit"> sie nicht im Abfall landen.</li>
+      <li>Das Start-up hat einen Online-Shop, <input class="gap w-s" data-answer="um"> die Waren in ganz Deutschland zu verkaufen.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex5')">Prüfen</button>
+      <button class="b" onclick="showSol('ex5')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex5')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex5"></span>
+    </div>
+  </div>
+
+  <!-- Übung 6 -->
+  <div class="ex-block" id="ex6">
+    <div class="ex-head"><span class="tag b">Übung 6</span><h4>Verbinden Sie die Sätze</h4></div>
+    <p class="ex-hint">Escribe la frase completa. Se aceptan ambas soluciones cuando las dos son correctas. La coma es opcional.</p>
+    <ol class="q">
+      <li>Ich lerne Deutsch. Ich will in Deutschland studieren.
+        <textarea class="gap" rows="1" data-answer="Ich lerne Deutsch, um in Deutschland zu studieren.|Ich lerne Deutsch, damit ich in Deutschland studiere."></textarea>
+        <span class="sol">Ich lerne Deutsch, um in Deutschland zu studieren.</span></li>
+      <li>Wir trennen den Müll. Wir wollen die Umwelt schützen.
+        <textarea class="gap" rows="1" data-answer="Wir trennen den Müll, um die Umwelt zu schützen.|Wir trennen den Müll, damit wir die Umwelt schützen."></textarea>
+        <span class="sol">Wir trennen den Müll, um die Umwelt zu schützen.</span></li>
+      <li>Die Cafés verlangen einen Euro Pfand. Die Kunden sollen die Becher zurückbringen.
+        <textarea class="gap" rows="1" data-answer="Die Cafés verlangen einen Euro Pfand, damit die Kunden die Becher zurückbringen."></textarea>
+        <span class="sol">Die Cafés verlangen einen Euro Pfand, damit die Kunden die Becher zurückbringen.</span></li>
+      <li>Er steht früh auf. Er will den ersten Bus nehmen.
+        <textarea class="gap" rows="1" data-answer="Er steht früh auf, um den ersten Bus zu nehmen.|Er steht früh auf, damit er den ersten Bus nimmt."></textarea>
+        <span class="sol">Er steht früh auf, um den ersten Bus zu nehmen.</span></li>
+      <li>Ich kaufe eine SUNNYBAG. Ich kann mein Handy in der Natur aufladen.
+        <textarea class="gap" rows="1" data-answer="Ich kaufe eine SUNNYBAG, damit ich mein Handy in der Natur aufladen kann.|Ich kaufe eine SUNNYBAG, um mein Handy in der Natur aufzuladen."></textarea>
+        <span class="sol">Ich kaufe eine SUNNYBAG, um mein Handy in der Natur aufzuladen. / …, damit ich mein Handy in der Natur aufladen kann.</span></li>
+      <li>Die Uni-Mensa kocht vegetarisch. Die Studenten essen weniger Fleisch.
+        <textarea class="gap" rows="1" data-answer="Die Uni-Mensa kocht vegetarisch, damit die Studenten weniger Fleisch essen."></textarea>
+        <span class="sol">Die Uni-Mensa kocht vegetarisch, damit die Studenten weniger Fleisch essen.</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex6')">Prüfen</button>
+      <button class="b" onclick="showSol('ex6')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex6')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex6"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VIEW 3 ============================ -->
+<section class="view" id="v3">
+  <h2>Deklination der Adjektive</h2>
+  <p class="lede">Esta es la base de la sección 1: las mismas terminaciones se aplican al Komparativ y al Superlativ. Hay tres situaciones según lo que haya <strong>delante</strong> del adjetivo.</p>
+
+  <h3><span class="num">1</span>Después de artículo determinado (<i>der, die, das, diese, jede, alle</i>)</h3>
+  <p class="ex-hint">Solo dos terminaciones posibles: <b>-e</b> o <b>-en</b>.</p>
+  <div class="scroll">
+  <table class="tbl">
+    <tr><th></th><th>maskulin</th><th>feminin</th><th>neutrum</th><th>Plural</th></tr>
+    <tr><td class="k">Nominativ</td><td>der neu<span class="end">e</span> Shop</td><td>die neu<span class="end">e</span> Tasche</td><td>das neu<span class="end">e</span> Handy</td><td>die neu<span class="end">en</span> Becher</td></tr>
+    <tr><td class="k">Akkusativ</td><td>den neu<span class="end">en</span> Shop</td><td>die neu<span class="end">e</span> Tasche</td><td>das neu<span class="end">e</span> Handy</td><td>die neu<span class="end">en</span> Becher</td></tr>
+    <tr><td class="k">Dativ</td><td>dem neu<span class="end">en</span> Shop</td><td>der neu<span class="end">en</span> Tasche</td><td>dem neu<span class="end">en</span> Handy</td><td>den neu<span class="end">en</span> Bechern</td></tr>
+    <tr><td class="k">Genitiv</td><td>des neu<span class="end">en</span> Shops</td><td>der neu<span class="end">en</span> Tasche</td><td>des neu<span class="end">en</span> Handys</td><td>der neu<span class="end">en</span> Becher</td></tr>
+  </table>
+  </div>
+  <div class="note"><b>Regla rápida:</b> en esta tabla, todo lo que <strong>no</strong> sea nominativo singular o acusativo femenino/neutro lleva <b>-en</b>. Dativo y genitivo: siempre <b>-en</b>. Plural: siempre <b>-en</b>.</div>
+
+  <h3><span class="num">2</span>Después de <i>ein</i>-Wörter (<i>ein, kein, mein, dein, unser…</i>)</h3>
+  <p class="ex-hint">Igual que arriba, salvo en <strong>tres casillas</strong> donde el artículo no muestra el género: ahí el adjetivo lo marca.</p>
+  <div class="scroll">
+  <table class="tbl">
+    <tr><th></th><th>maskulin</th><th>feminin</th><th>neutrum</th><th>Plural (kein…)</th></tr>
+    <tr><td class="k">Nominativ</td><td>ein neu<span class="end">er</span> Shop ⚠</td><td>eine neu<span class="end">e</span> Tasche</td><td>ein neu<span class="end">es</span> Handy ⚠</td><td>keine neu<span class="end">en</span> Becher</td></tr>
+    <tr><td class="k">Akkusativ</td><td>einen neu<span class="end">en</span> Shop</td><td>eine neu<span class="end">e</span> Tasche</td><td>ein neu<span class="end">es</span> Handy ⚠</td><td>keine neu<span class="end">en</span> Becher</td></tr>
+    <tr><td class="k">Dativ</td><td>einem neu<span class="end">en</span> Shop</td><td>einer neu<span class="end">en</span> Tasche</td><td>einem neu<span class="end">en</span> Handy</td><td>keinen neu<span class="end">en</span> Bechern</td></tr>
+    <tr><td class="k">Genitiv</td><td>eines neu<span class="end">en</span> Shops</td><td>einer neu<span class="end">en</span> Tasche</td><td>eines neu<span class="end">en</span> Handys</td><td>keiner neu<span class="end">en</span> Becher</td></tr>
+  </table>
+  </div>
+
+  <h3><span class="num">3</span>Sin artículo (Nullartikel)</h3>
+  <p class="ex-hint">El adjetivo asume la terminación del artículo determinado: <i>-er, -e, -es, -em, -en…</i></p>
+  <div class="scroll">
+  <table class="tbl">
+    <tr><th></th><th>maskulin</th><th>feminin</th><th>neutrum</th><th>Plural</th></tr>
+    <tr><td class="k">Nominativ</td><td>frisch<span class="end">er</span> Saft</td><td>frisch<span class="end">e</span> Milch</td><td>frisch<span class="end">es</span> Obst</td><td>frisch<span class="end">e</span> Becher</td></tr>
+    <tr><td class="k">Akkusativ</td><td>frisch<span class="end">en</span> Saft</td><td>frisch<span class="end">e</span> Milch</td><td>frisch<span class="end">es</span> Obst</td><td>frisch<span class="end">e</span> Becher</td></tr>
+    <tr><td class="k">Dativ</td><td>frisch<span class="end">em</span> Saft</td><td>frisch<span class="end">er</span> Milch</td><td>frisch<span class="end">em</span> Obst</td><td>frisch<span class="end">en</span> Bechern</td></tr>
+  </table>
+  </div>
+
+  <div class="ex-block" id="ex7">
+    <div class="ex-head"><span class="tag">Übung 7</span><h4>Terminaciones de adjetivo</h4></div>
+    <p class="ex-hint">Escribe solo la terminación (<i>e, en, er, es, em</i>). Si no lleva ninguna, escribe un guion: <b>-</b></p>
+    <ol class="q">
+      <li>Ich kaufe ein umweltfreundlich<input class="gap w-s" data-answer="es"> Produkt.</li>
+      <li>Mit dem neu<input class="gap w-s" data-answer="en"> Fahrrad fahre ich zur Uni.</li>
+      <li>Das ist die best<input class="gap w-s" data-answer="e"> Idee für die Umwelt.</li>
+      <li>Wir trinken kalt<input class="gap w-s" data-answer="es"> Wasser. <span class="cue">(ohne Artikel)</span></li>
+      <li>Die Farbe der neu<input class="gap w-s" data-answer="en"> Tasche ist schön. <span class="cue">(Genitiv)</span></li>
+      <li>Er hilft seinem alt<input class="gap w-s" data-answer="en"> Nachbarn.</li>
+      <li>Ein größer<input class="gap w-s" data-answer="es"> Haus kostet mehr Energie.</li>
+      <li>In der Mensa gibt es nur vegetarisch<input class="gap w-s" data-answer="e"> Gerichte. <span class="cue">(Plural, ohne Artikel)</span></li>
+      <li>Ich suche den günstigst<input class="gap w-s" data-answer="en"> Anbieter. <span class="cue">(Akkusativ)</span></li>
+      <li>Sie hat weniger<input class="gap w-s" data-answer="-|–|—"> Müll produziert als ich.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex7')">Prüfen</button>
+      <button class="b" onclick="showSol('ex7')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex7')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex7"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex8">
+    <div class="ex-head"><span class="tag b">Übung 8</span><h4>Artikel + Adjektiv komplett</h4></div>
+    <p class="ex-hint">Escribe las dos palabras: artículo y adjetivo declinado.</p>
+    <ol class="q">
+      <li>Ich fahre mit <input class="gap" data-answer="dem neuen"> <span class="cue">(der/neu)</span> Bus in die Stadt.</li>
+      <li>Hast du <input class="gap" data-answer="einen guten"> <span class="cue">(ein/gut)</span> Vorschlag für die Aktion?</li>
+      <li><input class="gap" data-answer="Die meisten"> <span class="cue">(der/viel, Superl.)</span> Leute trennen ihren Müll.</li>
+      <li>Wir suchen <input class="gap w-l" data-answer="eine umweltfreundlichere"> <span class="cue">(ein/umweltfreundlich, Komp.)</span> Lösung.</li>
+      <li>Das Ziel <input class="gap" data-answer="der neuen"> <span class="cue">(der/neu)</span> Aktion ist klar. <span class="cue">(Genitiv)</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex8')">Prüfen</button>
+      <button class="b" onclick="showSol('ex8')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex8')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex8"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VIEW 4 ============================ -->
+<section class="view" id="v4">
+  <h2>Das Wetter in D-A-CH</h2>
+  <p class="lede">Vocabulario del tiempo. Las traducciones están ocultas para que puedas autoevaluarte: pasa el cursor (o toca) la palabra para verla, o pulsa el altavoz para oír la pronunciación.</p>
+  <div class="vtoggle">
+    <button class="b" onclick="toggleEs(this)">Traducciones: mostrar todas</button>
+  </div>
+
+  <h3><span class="num">A</span>Adjektive</h3>
+  <div class="vgrid" id="vg-wetter-adj"></div>
+
+  <h3><span class="num">B</span>Verben — «es» + Verb</h3>
+  <p class="ex-hint">Estos verbos son impersonales: siempre con <b>es</b>, nunca con otro sujeto.</p>
+  <div class="vgrid" id="vg-wetter-verb"></div>
+
+  <h3><span class="num">C</span>Nomen</h3>
+  <div class="vgrid" id="vg-wetter-nomen"></div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Gut gesagt: Small Talk über das Wetter</h3>
+    <ul class="phrases">
+      <li><span class="de">Was für ein Wetter heute!</span> <span class="cue">— ¡Vaya tiempo hace hoy!</span></li>
+      <li><span class="de">Bei dem Regen möchte man gar nicht vor die Tür gehen!</span> <span class="cue">— Con esta lluvia no dan ganas ni de salir de casa.</span></li>
+      <li><span class="de">Endlich wieder Sonne!</span> <span class="cue">— ¡Por fin sol otra vez!</span></li>
+      <li><span class="de">So ein Traumwetter!</span> <span class="cue">— ¡Qué tiempo tan estupendo!</span></li>
+      <li><span class="de">Es ist mir zu heiß / zu kalt.</span> <span class="cue">— Hace demasiado calor / frío para mí.</span></li>
+      <li><span class="de">Morgen soll es besser werden.</span> <span class="cue">— Dicen que mañana mejorará.</span></li>
+    </ul>
+  </div>
+
+  <div class="ex-block" id="ex9">
+    <div class="ex-head"><span class="tag">Übung 9</span><h4>Welches Wetter ist das?</h4></div>
+    <p class="ex-hint">Completa con el adjetivo o verbo correcto.</p>
+    <ol class="q">
+      <li>Man sieht fast nichts auf der Straße. Es ist sehr <input class="gap" data-answer="neblig|nebelig">.</li>
+      <li>Es ist heiß und die Luft ist sehr feucht. Das Wetter ist <input class="gap" data-answer="schwül|schwuel">.</li>
+      <li>Im Winter ist es kalt und es <input class="gap w-s" data-answer="schneit">.</li>
+      <li>Der Himmel ist grau, man sieht keine Sonne. Es ist <input class="gap" data-answer="bewölkt|bewoelkt|wolkig">.</li>
+      <li>Es regnet nur ganz leicht. Es <input class="gap w-s" data-answer="nieselt">.</li>
+      <li>Erst sieht man den Blitz, dann hört man den <input class="gap" data-answer="donner">.</li>
+      <li>Es hat seit Wochen nicht geregnet. Es ist sehr <input class="gap" data-answer="trocken">.</li>
+      <li>Der Wind ist sehr stark. Es ist <input class="gap" data-answer="stürmisch|stuermisch|windig">.</li>
+      <li>Kleine Eiskugeln fallen vom Himmel. Es <input class="gap w-s" data-answer="hagelt">.</li>
+      <li>Nicht kalt, nicht heiß — angenehm. Das Wetter ist <input class="gap" data-answer="mild">.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex9')">Prüfen</button>
+      <button class="b" onclick="showSol('ex9')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex9')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex9"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex10">
+    <div class="ex-head"><span class="tag b">Übung 10</span><h4>Wetter + Komparativ</h4></div>
+    <p class="ex-hint">Combina los dos temas: el tiempo con comparativo y superlativo.</p>
+    <ol class="q">
+      <li>Im Juli ist es in Costa Rica <input class="gap" data-answer="feuchter"> <span class="cue">(feucht, Komp.)</span> als im Februar.</li>
+      <li>Das war der <input class="gap" data-answer="heißeste|heisseste"> <span class="cue">(heiß, Superl.)</span> Sommer seit 100 Jahren.</li>
+      <li>Heute ist ein <input class="gap" data-answer="kälterer|kaelterer"> <span class="cue">(kalt, Komp.)</span> Tag als gestern.</li>
+      <li>Im Januar haben wir die <input class="gap" data-answer="niedrigsten"> <span class="cue">(niedrig, Superl.)</span> Temperaturen.</li>
+      <li>Ich nehme einen Regenschirm mit, <input class="gap w-s" data-answer="um"> nicht nass zu werden.</li>
+      <li>Wir bleiben zu Hause, <input class="gap w-s" data-answer="damit"> die Kinder nicht krank werden.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex10')">Prüfen</button>
+      <button class="b" onclick="showSol('ex10')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex10')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex10"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VIEW 5 ============================ -->
+<section class="view" id="v5">
+  <h2>Umwelt — Wortschatz und Redemittel</h2>
+  <p class="lede">Vocabulario del medio ambiente agrupado por temas, y las frases hechas para dar tu opinión y presentar una acción ecológica.</p>
+  <div class="vtoggle">
+    <button class="b" onclick="toggleEs(this)">Traducciones: mostrar todas</button>
+  </div>
+
+  <h3><span class="num">A</span>Müll, Verpackung, Pfand</h3>
+  <div class="vgrid" id="vg-u1"></div>
+
+  <h3><span class="num">B</span>Energie und Klima</h3>
+  <div class="vgrid" id="vg-u2"></div>
+
+  <h3><span class="num">C</span>Handeln und Verben</h3>
+  <div class="vgrid" id="vg-u3"></div>
+
+  <h3><span class="num">D</span>Konsum und Alltag</h3>
+  <div class="vgrid" id="vg-u4"></div>
+
+  <h2 style="margin-top:40px">Redemittel</h2>
+
+  <div class="cols2">
+    <div class="card">
+      <h3 style="margin-top:0;color:var(--accent)">Die eigene Meinung äußern</h3>
+      <ul class="phrases">
+        <li>Ich bin (nicht) der Meinung, dass …</li>
+        <li>Meiner Meinung nach …</li>
+        <li>Ich stehe (nicht) auf dem Standpunkt, dass …</li>
+        <li>Ich bin (nicht) davon überzeugt, dass …</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0;color:var(--ok)">Zustimmen</h3>
+      <ul class="phrases">
+        <li>Das sehe ich auch so, denn …</li>
+        <li>Da hast du völlig recht. Ich finde auch, dass …</li>
+        <li>Ich bin auch der Meinung, dass …</li>
+        <li>Dieser Ansicht bin ich auch: …</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cols2">
+    <div class="card">
+      <h3 style="margin-top:0;color:var(--bad)">Widersprechen</h3>
+      <ul class="phrases">
+        <li>Das stimmt meiner Meinung nach nicht, denn …</li>
+        <li>Da muss ich dir leider widersprechen. Ich finde, dass …</li>
+        <li>Ich sehe das etwas anders: …</li>
+        <li>In diesem Punkt hast du nicht recht, …</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0;color:var(--accent-2)">Eine Umweltaktion vorstellen</h3>
+      <ul class="phrases">
+        <li>Ich habe schon von … gehört.</li>
+        <li>Bei uns gibt es …</li>
+        <li>Die Teilnehmer/innen engagieren sich für / gegen …</li>
+        <li>Bei der Aktion geht es um … / Ziel der Aktion ist …</li>
+        <li>Man kann … mit … vergleichen.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Ojo con la estructura:</b> <i>Ich bin der Meinung, <b>dass</b> …</i> introduce un Nebensatz → el verbo conjugado va <strong>al final</strong>.<br>
+    <span class="ex">Ich bin der Meinung, dass die Verkehrsmittel umsonst sein <b>sollten</b>.</span><br>
+    En cambio <i>denn</i> es coordinante → orden normal: <span class="ex">…, denn die Umwelt <b>ist</b> wichtig.</span>
+  </div>
+
+  <div class="ex-block" id="ex11">
+    <div class="ex-head"><span class="tag">Übung 11</span><h4>Redemittel ergänzen</h4></div>
+    <ol class="q">
+      <li><input class="gap" data-answer="meiner"> Meinung nach sollten Supermärkte Obst ohne Verpackung verkaufen.</li>
+      <li>Da muss ich dir leider <input class="gap" data-answer="widersprechen">. Ich finde, dass das zu teuer ist.</li>
+      <li>Ich bin davon <input class="gap" data-answer="überzeugt|ueberzeugt">, dass wir weniger Plastik brauchen.</li>
+      <li>Die Teilnehmer <input class="gap" data-answer="engagieren"> sich für den Klimaschutz.</li>
+      <li>Bei der Aktion <input class="gap w-s" data-answer="geht"> es um Lebensmittelverschwendung.</li>
+      <li>Das <input class="gap" data-answer="sehe"> ich auch so, denn die Verpackung landet immer im Müll.</li>
+      <li>Da hast du völlig <input class="gap w-s" data-answer="recht">.</li>
+      <li><input class="gap w-s" data-answer="ziel"> der Aktion ist, weniger Müll zu produzieren.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex11')">Prüfen</button>
+      <button class="b" onclick="showSol('ex11')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex11')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex11"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Diskussionsthemen — zum Sprechen üben</h3>
+    <p class="ex-hint">Para cada idea, apunta 2 argumentos a favor y 2 en contra usando los Redemittel. Intenta meter al menos un <i>damit</i> o <i>um … zu</i> y un Superlativ en cada respuesta.</p>
+    <ul class="phrases">
+      <li>In der Uni-Mensa sollte es nur vegetarische Gerichte geben.</li>
+      <li>Die öffentlichen Verkehrsmittel sollten umsonst sein.</li>
+      <li>Im Büro sollte man keine E-Mails ausdrucken.</li>
+      <li>Supermärkte sollten Obst und Gemüse ohne Verpackung verkaufen.</li>
+    </ul>
+    <div class="card flat" style="margin-top:14px">
+      <p style="margin:0 0 6px;font-size:13px;font-weight:700;color:var(--ink-3);text-transform:uppercase;letter-spacing:.1em">Beispielantwort</p>
+      <p class="ex" style="margin:0">Meiner Meinung nach sollten die öffentlichen Verkehrsmittel umsonst sein, <span class="hl">damit</span> mehr Leute das Auto zu Hause lassen. Der Bus ist die <span class="hl2">umweltfreundlichere</span> Alternative, und die Städte brauchen <span class="hl2">weniger</span> Parkplätze. Da muss ich aber sagen: Der Staat braucht <span class="hl2">mehr</span> Geld, <span class="hl">um</span> das zu finanzieren.</p>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex12">
+    <div class="ex-head"><span class="tag b">Übung 12</span><h4>Schreibtraining</h4></div>
+    <p class="ex-hint">Escribe tu propia frase. No se corrige automáticamente: compárala con el modelo y revisa el orden del verbo.</p>
+    <ol class="q">
+      <li>Gib deine Meinung zu «Im Büro sollte man keine E-Mails ausdrucken»:
+        <textarea class="gap" rows="2" data-answer="__free__"></textarea>
+        <span class="sol">Modelo: Ich bin der Meinung, dass man im Büro keine E-Mails ausdrucken sollte, um Papier zu sparen.</span></li>
+      <li>Stelle eine Umweltaktion aus Costa Rica vor:
+        <textarea class="gap" rows="2" data-answer="__free__"></textarea>
+        <span class="sol">Modelo: Bei uns gibt es eine Aktion für die Strände. Die Teilnehmer engagieren sich gegen Plastikmüll. Ziel der Aktion ist, die Strände sauber zu halten.</span></li>
+      <li>Widersprich: «Bio-Produkte sind immer die beste Wahl.»
+        <textarea class="gap" rows="2" data-answer="__free__"></textarea>
+        <span class="sol">Modelo: Da muss ich dir leider widersprechen. Bio-Produkte sind oft die teuersten, und man muss sie manchmal aus anderen Ländern importieren.</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b" onclick="showSol('ex12')">Modelle zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex12')">Zurücksetzen</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VIEW 6 ============================ -->
+<section class="view" id="v6">
+  <h2>Karteikarten</h2>
+  <p class="lede">Elige los mazos y la dirección. Las que marques como <b>sabidas</b> desaparecen hasta que reinicies; las que falles vuelven más adelante en una posición aleatoria.</p>
+
+  <div class="card">
+    <div class="fc-setup">
+      <div class="fgroup">
+        <span class="flbl">Mazos</span>
+        <div class="chips" id="deck-chips">
+          <button class="chip on" data-deck="umwelt">Umwelt</button>
+          <button class="chip on" data-deck="wetter">Wetter</button>
+          <button class="chip" data-deck="redemittel">Redemittel</button>
+          <button class="chip" data-deck="grammatik">Grammatik</button>
+        </div>
+      </div>
+      <div class="fgroup">
+        <span class="flbl">Dirección</span>
+        <div class="chips" id="dir-chips">
+          <button class="chip on" data-dir="de-es">DE → ES</button>
+          <button class="chip" data-dir="es-de">ES → DE</button>
+          <button class="chip" data-dir="mix">Mezclado</button>
+        </div>
+      </div>
+      <div class="fgroup">
+        <span class="flbl">&nbsp;</span>
+        <button class="b primary" onclick="startDeck()" style="padding:9px 20px">Starten</button>
+      </div>
+    </div>
+    <p class="ex-hint" style="margin:0">Atajos: <span class="kbd">Espacio</span> girar · <span class="kbd">1</span> no la sé · <span class="kbd">2</span> la sé</p>
+  </div>
+
+  <div class="fc-stage" id="fc-stage">
+    <div class="pbar"><i id="fc-bar"></i></div>
+    <div class="fc-meta">
+      <span id="fc-left">—</span>
+      <span id="fc-known">—</span>
+    </div>
+    <div class="flashcard" id="fc-card" onclick="flipCard()">
+      <span class="fc-dir" id="fc-dirlbl"></span>
+      <button class="spk fc-spk" id="fc-spk" onclick="event.stopPropagation();speakCurrent()">🔊</button>
+      <div class="fc-front" id="fc-front"></div>
+      <div class="fc-back hidden" id="fc-back"></div>
+      <div class="fc-hint-ex hidden" id="fc-ex"></div>
+      <div class="fc-tap" id="fc-tap">Haz clic para ver la respuesta</div>
+    </div>
+    <div class="fc-actions hidden" id="fc-actions">
+      <button class="fc-no" onclick="answerCard(false)">✗ No la sé</button>
+      <button class="fc-yes" onclick="answerCard(true)">✓ La sé</button>
+    </div>
+    <div class="btns">
+      <button class="b ghost" onclick="startDeck()">Neu starten</button>
+    </div>
+  </div>
+
+  <div class="fc-done hidden" id="fc-done">
+    <div class="big">Geschafft! 🎉</div>
+    <p class="lede" style="margin:0 auto 18px" id="fc-done-txt"></p>
+    <button class="b primary" onclick="startDeck()">Noch einmal</button>
+  </div>
+</section>
+
+<!-- ============================ VIEW 7 ============================ -->
+<section class="view" id="v7">
+  <h2>Mini-Test</h2>
+  <p class="lede">15 preguntas mezcladas de todo el capítulo. Haz el test sin mirar las otras secciones y revisa qué falla.</p>
+
+  <div class="ex-block" id="test">
+    <ol class="q">
+      <li>Mehrwegflaschen sind die <input class="gap" data-answer="beste"> Alternative. <span class="cue">(gut, Superl.)</span></li>
+      <li>Der Geschirrspüler verbraucht <input class="gap" data-answer="weniger"> Wasser. <span class="cue">(wenig, Komp.)</span></li>
+      <li>Ich hätte gern ein <input class="gap" data-answer="besseres"> Fahrrad. <span class="cue">(gut, Komp.)</span></li>
+      <li>Das ist die <input class="gap" data-answer="höchste|hoechste"> Temperatur des Jahres. <span class="cue">(hoch, Superl.)</span></li>
+      <li>reCup bietet Pfandbecher an, <input class="gap w-s" data-answer="um"> die Wegwerfbecher zu reduzieren.</li>
+      <li>Die Cafés verlangen einen Euro Pfand, <input class="gap w-s" data-answer="damit"> die Kunden die Becher zurückbringen.</li>
+      <li>Die Taschen haben einen Akku, damit man das Handy immer <input class="gap" data-answer="aufladen kann">. <span class="cue">(aufladen / können)</span></li>
+      <li>Ich nehme den Bus, um Geld <input class="gap" data-answer="zu sparen">. <span class="cue">(sparen)</span></li>
+      <li>Er steht früh auf, um den Müll <input class="gap" data-answer="rauszubringen|herauszubringen">. <span class="cue">(rausbringen)</span></li>
+      <li>Es ist heiß und sehr feucht: das Wetter ist <input class="gap" data-answer="schwül|schwuel">.</li>
+      <li>Man sieht nichts: es ist <input class="gap" data-answer="neblig|nebelig">.</li>
+      <li>Erst der Blitz, dann der <input class="gap" data-answer="donner">.</li>
+      <li>SIRPLUS <input class="gap" data-answer="rettet"> Lebensmittel, damit sie nicht im Abfall landen. <span class="cue">(retten)</span></li>
+      <li>Wir müssen den Müll <input class="gap" data-answer="trennen">. <span class="cue">(separar)</span></li>
+      <li><input class="gap" data-answer="meiner"> Meinung nach ist das die beste Lösung.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('test')">Test auswerten</button>
+      <button class="b" onclick="showSol('test')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('test')">Neu starten</button>
+      <span class="score hidden" id="s-test"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Checkliste vor der Prüfung</h3>
+    <ul class="phrases">
+      <li>¿Sé cuándo el adjetivo lleva terminación y cuándo no? (antes de sustantivo sí, después de <i>sein</i> no)</li>
+      <li>¿Me acuerdo de que <i>mehr</i> y <i>weniger</i> no se declinan nunca?</li>
+      <li>¿Sé los irregulares: <i>gut–besser–best-</i>, <i>viel–mehr–meist-</i>, <i>hoch–höher–höchst-</i>, <i>nah–näher–nächst-</i>?</li>
+      <li>¿Distingo si los sujetos son iguales (um … zu) o distintos (damit)?</li>
+      <li>¿Pongo el <i>zu</i> dentro del verbo separable? (<i>aufzuladen</i>)</li>
+      <li>¿Pongo el verbo conjugado al final después de <i>damit</i> y de <i>dass</i>?</li>
+      <li>¿Sé describir una foto del tiempo con 3 frases?</li>
+      <li>¿Puedo dar mi opinión, estar de acuerdo y contradecir con los Redemittel?</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  Material basado en las páginas del libro de la lección. Hecho para estudiar; las traducciones son contextuales, no literales.
+</footer>
+</div>
+
+<button class="theme-btn" id="themeBtn" title="Modo claro / oscuro">◐</button>
+
+<script>
+/* =========================================================
+   DATOS
+   ========================================================= */
+const VOC = {
+  wetterAdj:[
+    ["windig","ventoso"],["stürmisch","con viento fuerte, tormentoso"],["neblig","con niebla"],
+    ["feucht","húmedo"],["schwül","bochornoso, húmedo y caluroso"],["regnerisch","lluvioso"],
+    ["trocken","seco"],["mild","templado, suave"],["warm","cálido, templado"],
+    ["heiß","muy caluroso"],["kalt","frío"],["kühl","fresco"],
+    ["wolkig","nublado"],["bewölkt","nublado, cubierto"],["sonnig","soleado"],["eisig","helado, gélido"]
+  ],
+  wetterVerb:[
+    ["es regnet","llueve"],["es schneit","nieva"],["es nieselt","llovizna"],
+    ["es hagelt","graniza"],["es blitzt","relampaguea"],["es donnert","truena"],
+    ["die Sonne scheint","el sol brilla"],["es friert","hiela"],["der Wind weht","sopla el viento"]
+  ],
+  wetterNomen:[
+    ["der Regen","la lluvia"],["der Schnee","la nieve"],["der Nebel","la niebla"],
+    ["die Wolke, -n","la nube"],["der Blitz, -e","el relámpago"],["der Donner","el trueno"],
+    ["das Gewitter, -","la tormenta eléctrica"],["der Hagel","el granizo"],["der Sturm, ⸚e","la tormenta de viento"],
+    ["die Hitze","el calor intenso"],["die Kälte","el frío"],["die Temperatur, -en","la temperatura"],
+    ["der Grad, -e","el grado"],["die Wettervorhersage","el pronóstico del tiempo"],["die Trockenheit","la sequía"],
+    ["der Regenschirm, -e","el paraguas"]
+  ],
+  u1:[
+    ["der Müll","la basura"],["den Müll trennen","separar la basura"],["der Abfall, ⸚e","el residuo, el desecho"],
+    ["im Abfall landen","acabar en la basura"],["die Mülltonne, -n","el contenedor de basura"],
+    ["das Pfand","el depósito (que se devuelve)"],["die Pfandflasche, -n","la botella con depósito"],
+    ["die Mehrwegflasche, -n","la botella reutilizable"],["der Pfandbecher, -","el vaso reutilizable con depósito"],
+    ["der Wegwerfbecher, -","el vaso desechable"],["die Verpackung, -en","el envase, el embalaje"],
+    ["ohne Verpackung","sin envase"],["die Plastiktüte, -n","la bolsa de plástico"],
+    ["die Stofftasche, -n","la bolsa de tela"],["das Recycling","el reciclaje"],["recyceln","reciclar"],
+    ["wiederverwenden","reutilizar"],["der Einweg-Artikel","el artículo de un solo uso"]
+  ],
+  u2:[
+    ["die Umwelt","el medio ambiente"],["umweltfreundlich","ecológico, respetuoso con el medio ambiente"],
+    ["der Umweltschutz","la protección del medio ambiente"],["die Umweltverschmutzung","la contaminación"],
+    ["der Strom","la electricidad"],["die Stromrechnung, -en","la factura de la luz"],
+    ["die Energie, -n","la energía"],["erneuerbare Energien","energías renovables"],
+    ["das Windrad, ⸚er","el aerogenerador"],["die Solaranlage, -n","la instalación solar"],
+    ["der Akku, -s","la batería recargable"],["aufladen","cargar (una batería)"],
+    ["das Klima","el clima"],["der Klimawandel","el cambio climático"],
+    ["die Erderwärmung","el calentamiento global"],["der CO₂-Ausstoß","la emisión de CO₂"],
+    ["nachhaltig","sostenible"],["die Nachhaltigkeit","la sostenibilidad"],["die Natur","la naturaleza"]
+  ],
+  u3:[
+    ["schützen","proteger"],["retten","salvar, rescatar"],["vermeiden","evitar"],
+    ["reduzieren","reducir"],["sparen","ahorrar"],["verbrauchen","consumir, gastar"],
+    ["der Verbrauch","el consumo"],["verschwenden","desperdiciar"],
+    ["die Lebensmittelverschwendung","el desperdicio de alimentos"],
+    ["sich engagieren für / gegen","comprometerse a favor de / en contra de"],
+    ["der Teilnehmer, - / die Teilnehmerin","el participante / la participante"],
+    ["die Aktion, -en","la acción, la campaña"],["das Ziel, -e","el objetivo, la meta"],
+    ["vergleichen","comparar"],["zurückbringen","devolver"],["ausdrucken","imprimir"],
+    ["verlangen","exigir, cobrar"],["anbieten","ofrecer"]
+  ],
+  u4:[
+    ["die Lebensmittel (Pl.)","los alimentos"],["das Obst und Gemüse","la fruta y la verdura"],
+    ["vegetarisch","vegetariano"],["das Gericht, -e","el plato (de comida)"],
+    ["die öffentlichen Verkehrsmittel","el transporte público"],["umsonst / kostenlos","gratis"],
+    ["günstig","barato, económico"],["niedrig","bajo"],["der Geschirrspüler, -","el lavavajillas"],
+    ["die Ware, -n","la mercancía, el producto"],["der Online-Shop, -s","la tienda online"],
+    ["das Start-up, -s","la startup"],["zu Fuß gehen","ir a pie"],["bio / biologisch","orgánico, ecológico"],
+    ["der Verbraucher, -","el consumidor"],["der Kunde, -n","el cliente"]
+  ],
+  redemittel:[
+    ["Meiner Meinung nach …","En mi opinión…"],
+    ["Ich bin (nicht) der Meinung, dass …","(No) soy de la opinión de que…"],
+    ["Ich bin davon überzeugt, dass …","Estoy convencido de que…"],
+    ["Ich stehe auf dem Standpunkt, dass …","Sostengo el punto de vista de que…"],
+    ["Das sehe ich auch so, denn …","Yo lo veo igual, porque…"],
+    ["Da hast du völlig recht.","Tienes toda la razón."],
+    ["Dieser Ansicht bin ich auch.","Yo también opino lo mismo."],
+    ["Das stimmt meiner Meinung nach nicht.","En mi opinión eso no es cierto."],
+    ["Da muss ich dir leider widersprechen.","Me temo que te tengo que contradecir."],
+    ["Ich sehe das etwas anders.","Yo lo veo algo distinto."],
+    ["In diesem Punkt hast du nicht recht.","En este punto no tienes razón."],
+    ["Ich habe schon von … gehört.","Ya he oído hablar de…"],
+    ["Bei uns gibt es …","En mi país / donde yo vivo hay…"],
+    ["Bei der Aktion geht es um …","La campaña trata de…"],
+    ["Ziel der Aktion ist …","El objetivo de la campaña es…"],
+    ["Man kann … mit … vergleichen.","Se puede comparar … con …"],
+    ["Was für ein Wetter heute!","¡Vaya tiempo hace hoy!"],
+    ["Endlich wieder Sonne!","¡Por fin sol otra vez!"],
+    ["So ein Traumwetter!","¡Qué tiempo tan estupendo!"]
+  ],
+  grammatik:[
+    ["gut – besser – best-","bueno – mejor – el mejor"],
+    ["viel – mehr – meist-","mucho – más – la mayoría"],
+    ["wenig – weniger – wenigst-","poco – menos – el menor"],
+    ["gern – lieber – liebst-","con gusto – preferentemente – lo que más gusta"],
+    ["hoch – höher – höchst-","alto – más alto – el más alto"],
+    ["nah – näher – nächst-","cercano – más cercano – el más cercano"],
+    ["groß – größer – größt-","grande – más grande – el más grande"],
+    ["teuer – teurer – teuerst-","caro – más caro – el más caro"],
+    ["alt – älter – ältest-","viejo – más viejo – el más viejo"],
+    ["die bessere Wahl","la mejor opción (de dos)"],
+    ["die beste Alternative","la mejor alternativa"],
+    ["ein moderneres Handy","un móvil más moderno"],
+    ["der teuerste Saft","el zumo más caro"],
+    ["damit + Nebensatz","para que (sujetos distintos), verbo al final"],
+    ["um … zu + Infinitiv","para (mismo sujeto), sin sujeto propio"],
+    ["um das Handy aufzuladen","para cargar el móvil (zu dentro del verbo separable)"],
+    ["damit man das Handy aufladen kann","para que se pueda cargar el móvil"]
+  ]
+};
+
+const MATCH_DATA = {
+  left:[
+    "SIRPLUS rettet Lebensmittel, …",
+    "Das Start-up hat einen Online-Shop, …",
+    "Die SUNNYBAG-Taschen haben einen Akku, …",
+    "Viele Kunden kaufen die Taschen, …",
+    "reCup bietet Pfandbecher an, …",
+    "Die Cafés verlangen einen Euro Pfand, …"
+  ],
+  right:[
+    ["A","um in der Natur Strom zu haben."],
+    ["B","damit sie nicht im Abfall landen."],
+    ["C","um die Wegwerfbecher zu reduzieren."],
+    ["D","um die Waren in ganz Deutschland zu verkaufen."],
+    ["E","damit die Kunden die Becher zurückbringen."],
+    ["F","damit man das Handy immer aufladen kann."]
+  ],
+  key:{0:"B",1:"D",2:"F",3:"A",4:"C",5:"E"}
+};
+
+/* =========================================================
+   UTIL
+   ========================================================= */
+function norm(s){
+  return (s||"").toString().trim().toLowerCase()
+    .replace(/ß/g,"ss")
+    .replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue")
+    .replace(/[.,;:!¡?¿"'’„“]/g,"")
+    .replace(/[–—]/g,"-")
+    .replace(/\s+/g," ")
+    .trim();
+}
+function accepts(input){
+  return (input.dataset.answer||"").split("|").map(norm);
+}
+function speak(text){
+  try{
+    if(!("speechSynthesis" in window)) return;
+    const u=new SpeechSynthesisUtterance(text.replace(/\(.*?\)/g,"").replace(/[,⸚-]/g," "));
+    u.lang="de-DE"; u.rate=.88;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+/* =========================================================
+   TABS
+   ========================================================= */
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest(".tab"); if(!b) return;
+  document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
+  document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
+  b.classList.add("active");
+  document.getElementById(b.dataset.view).classList.add("active");
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+
+/* =========================================================
+   TOOLTIPS en móvil
+   ========================================================= */
+document.addEventListener("click",e=>{
+  const t=e.target.closest(".tt");
+  document.querySelectorAll(".tt.show").forEach(x=>{if(x!==t)x.classList.remove("show")});
+  if(t) t.classList.toggle("show");
+});
+
+/* =========================================================
+   EJERCICIOS
+   ========================================================= */
+function checkBlock(id){
+  const root=document.getElementById(id);
+  let ok=0,total=0;
+
+  root.querySelectorAll("input.gap, textarea.gap").forEach(inp=>{
+    if(inp.dataset.answer==="__free__") return;
+    total++;
+    inp.classList.remove("ok","bad");
+    const val=norm(inp.value);
+    if(val && accepts(inp).includes(val)){ inp.classList.add("ok"); ok++; }
+    else inp.classList.add("bad");
+  });
+
+  root.querySelectorAll(".mc").forEach(mc=>{
+    total++;
+    mc.classList.add("graded");
+    const correct=mc.dataset.correct;
+    let got=false;
+    mc.querySelectorAll("label").forEach(lb=>{
+      lb.classList.remove("ok","bad");
+      const inp=lb.querySelector("input");
+      if(inp.value===correct) lb.classList.add("ok");
+      if(inp.checked && inp.value!==correct) lb.classList.add("bad");
+      if(inp.checked && inp.value===correct) got=true;
+    });
+    if(got) ok++;
+  });
+
+  const s=document.getElementById("s-"+id);
+  if(s){
+    s.classList.remove("hidden","good","mid","poor");
+    const pct= total? Math.round(ok/total*100):0;
+    s.textContent=ok+" / "+total+"  ·  "+pct+"%";
+    s.classList.add(pct>=80?"good":pct>=50?"mid":"poor");
+  }
+}
+function showSol(id){
+  const root=document.getElementById(id);
+  root.querySelectorAll("input.gap").forEach(inp=>{
+    if(inp.dataset.answer==="__free__") return;
+    inp.value=(inp.dataset.answer||"").split("|")[0];
+    inp.classList.remove("bad"); inp.classList.add("ok");
+  });
+  root.querySelectorAll("textarea.gap").forEach(ta=>{
+    if(ta.dataset.answer==="__free__") return;
+    ta.value=(ta.dataset.answer||"").split("|")[0];
+    ta.classList.remove("bad"); ta.classList.add("ok");
+  });
+  root.querySelectorAll(".sol").forEach(s=>s.classList.add("show"));
+  root.querySelectorAll(".mc").forEach(mc=>{
+    mc.classList.add("graded");
+    mc.querySelectorAll("label").forEach(lb=>{
+      lb.classList.remove("bad");
+      if(lb.querySelector("input").value===mc.dataset.correct) lb.classList.add("ok");
+    });
+  });
+}
+function resetBlock(id){
+  const root=document.getElementById(id);
+  root.querySelectorAll("input.gap, textarea.gap").forEach(i=>{i.value="";i.classList.remove("ok","bad")});
+  root.querySelectorAll(".sol").forEach(s=>s.classList.remove("show"));
+  root.querySelectorAll(".mc").forEach(mc=>{
+    mc.classList.remove("graded");
+    mc.querySelectorAll("label").forEach(lb=>lb.classList.remove("ok","bad"));
+    mc.querySelectorAll("input").forEach(i=>i.checked=false);
+  });
+  const s=document.getElementById("s-"+id);
+  if(s) s.classList.add("hidden");
+}
+
+/* =========================================================
+   MATCHING
+   ========================================================= */
+let mSel=null, mPairs={};
+function renderMatch(){
+  const L=document.getElementById("m-left"), R=document.getElementById("m-right");
+  L.innerHTML=""; R.innerHTML="";
+  MATCH_DATA.left.forEach((txt,i)=>{
+    const b=document.createElement("button");
+    b.className="mitem"; b.dataset.i=i;
+    b.innerHTML='<span class="idx">'+(i+1)+'</span><span>'+txt+'</span><span class="slot">?</span>';
+    b.onclick=()=>pickLeft(i);
+    L.appendChild(b);
+  });
+  MATCH_DATA.right.forEach(([L2,txt])=>{
+    const b=document.createElement("button");
+    b.className="mitem"; b.dataset.l=L2;
+    b.innerHTML='<span class="idx">'+L2+'</span><span>'+txt+'</span>';
+    b.onclick=()=>pickRight(L2);
+    R.appendChild(b);
+  });
+  paintMatch();
+}
+function pickLeft(i){
+  mSel=(mSel===i)?null:i;
+  paintMatch();
+}
+function pickRight(letter){
+  if(mSel===null){
+    // permite deshacer: si la letra está usada, la libera
+    for(const k in mPairs) if(mPairs[k]===letter) delete mPairs[k];
+    paintMatch(); return;
+  }
+  for(const k in mPairs) if(mPairs[k]===letter) delete mPairs[k];
+  mPairs[mSel]=letter;
+  mSel=null;
+  paintMatch();
+}
+function paintMatch(){
+  document.querySelectorAll("#m-left .mitem").forEach(el=>{
+    const i=+el.dataset.i;
+    el.classList.toggle("sel",mSel===i);
+    el.classList.remove("ok","bad");
+    const slot=el.querySelector(".slot");
+    if(mPairs[i]){ slot.textContent=mPairs[i]; slot.classList.add("filled"); }
+    else { slot.textContent="?"; slot.classList.remove("filled"); }
+  });
+  const used=Object.values(mPairs);
+  document.querySelectorAll("#m-right .mitem").forEach(el=>{
+    el.classList.toggle("used",used.includes(el.dataset.l));
+    el.classList.remove("ok","bad");
+  });
+}
+function checkMatch(){
+  let ok=0;
+  document.querySelectorAll("#m-left .mitem").forEach(el=>{
+    const i=+el.dataset.i;
+    el.classList.remove("ok","bad","sel");
+    if(mPairs[i]===MATCH_DATA.key[i]){ el.classList.add("ok"); ok++; }
+    else if(mPairs[i]) el.classList.add("bad");
+    else el.classList.add("bad");
+  });
+  const s=document.getElementById("s-ex4");
+  s.classList.remove("hidden","good","mid","poor");
+  const pct=Math.round(ok/6*100);
+  s.textContent=ok+" / 6  ·  "+pct+"%";
+  s.classList.add(pct>=80?"good":pct>=50?"mid":"poor");
+}
+function solveMatch(){
+  mPairs={};
+  Object.keys(MATCH_DATA.key).forEach(k=>mPairs[k]=MATCH_DATA.key[k]);
+  mSel=null; paintMatch();
+  document.querySelectorAll("#m-left .mitem").forEach(el=>el.classList.add("ok"));
+}
+function resetMatch(){
+  mPairs={}; mSel=null; paintMatch();
+  document.getElementById("s-ex4").classList.add("hidden");
+}
+
+/* =========================================================
+   VOCAB GRIDS
+   ========================================================= */
+function renderVocab(containerId,list){
+  const c=document.getElementById(containerId);
+  if(!c) return;
+  c.innerHTML="";
+  list.forEach(([de,es])=>{
+    const d=document.createElement("div");
+    d.className="vitem";
+    d.innerHTML='<span class="w"><span class="tt" data-es="'+es.replace(/"/g,"&quot;")+'">'+de+'</span><span class="es">'+es+'</span></span>';
+    const b=document.createElement("button");
+    b.className="spk"; b.textContent="🔊"; b.title="Aussprache";
+    b.onclick=()=>speak(de);
+    d.appendChild(b);
+    c.appendChild(d);
+  });
+}
+
+function toggleEs(btn){
+  const view=btn.closest(".view");
+  const grids=view.querySelectorAll(".vgrid");
+  const on=!grids[0].classList.contains("show-es");
+  grids.forEach(g=>g.classList.toggle("show-es",on));
+  view.querySelectorAll(".vtoggle .b").forEach(b=>{
+    b.textContent = on ? "Traducciones: ocultar todas" : "Traducciones: mostrar todas";
+  });
+}
+
+/* =========================================================
+   FLASHCARDS
+   ========================================================= */
+const DECK_MAP={
+  umwelt:[...VOC.u1,...VOC.u2,...VOC.u3,...VOC.u4],
+  wetter:[...VOC.wetterAdj,...VOC.wetterVerb,...VOC.wetterNomen],
+  redemittel:VOC.redemittel,
+  grammatik:VOC.grammatik
+};
+let fcQueue=[], fcKnown=0, fcTotal=0, fcFlipped=false, fcCurrent=null;
+let selDecks=new Set(["umwelt","wetter"]), selDir="de-es";
+
+document.getElementById("deck-chips").addEventListener("click",e=>{
+  const b=e.target.closest(".chip"); if(!b) return;
+  const d=b.dataset.deck;
+  if(selDecks.has(d)){ if(selDecks.size>1){selDecks.delete(d);b.classList.remove("on");} }
+  else { selDecks.add(d); b.classList.add("on"); }
+});
+document.getElementById("dir-chips").addEventListener("click",e=>{
+  const b=e.target.closest(".chip"); if(!b) return;
+  selDir=b.dataset.dir;
+  document.querySelectorAll("#dir-chips .chip").forEach(c=>c.classList.remove("on"));
+  b.classList.add("on");
+});
+
+function shuffle(a){
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+function startDeck(){
+  let pool=[];
+  selDecks.forEach(d=>{ (DECK_MAP[d]||[]).forEach(([de,es])=>pool.push({de,es})); });
+  // quitar duplicados por palabra alemana
+  const seen=new Set();
+  pool=pool.filter(c=>{ if(seen.has(c.de))return false; seen.add(c.de); return true; });
+  fcQueue=shuffle(pool);
+  fcTotal=fcQueue.length; fcKnown=0;
+  document.getElementById("fc-done").classList.add("hidden");
+  document.getElementById("fc-stage").classList.remove("hidden");
+  nextCard();
+}
+function nextCard(){
+  if(fcQueue.length===0){ return finishDeck(); }
+  fcCurrent=fcQueue[0];
+  fcCurrent.dir = selDir==="mix" ? (Math.random()<.5?"de-es":"es-de") : selDir;
+  fcFlipped=false;
+  const deToEs = fcCurrent.dir==="de-es";
+  document.getElementById("fc-front").textContent = deToEs?fcCurrent.de:fcCurrent.es;
+  document.getElementById("fc-back").textContent  = deToEs?fcCurrent.es:fcCurrent.de;
+  document.getElementById("fc-dirlbl").textContent = deToEs?"Deutsch → Español":"Español → Deutsch";
+  document.getElementById("fc-back").classList.add("hidden");
+  document.getElementById("fc-ex").classList.add("hidden");
+  document.getElementById("fc-tap").classList.remove("hidden");
+  document.getElementById("fc-actions").classList.add("hidden");
+  document.getElementById("fc-spk").style.visibility = deToEs?"visible":"hidden";
+  updateMeta();
+}
+function flipCard(){
+  if(!fcCurrent || fcFlipped) return;
+  fcFlipped=true;
+  document.getElementById("fc-back").classList.remove("hidden");
+  document.getElementById("fc-tap").classList.add("hidden");
+  document.getElementById("fc-actions").classList.remove("hidden");
+  document.getElementById("fc-spk").style.visibility="visible";
+}
+function answerCard(known){
+  if(!fcCurrent) return;
+  const card=fcQueue.shift();
+  if(known){ fcKnown++; }
+  else{
+    // reinsertar en posición aleatoria más adelante
+    const min=Math.min(3,fcQueue.length);
+    const pos=min+Math.floor(Math.random()*Math.max(1,fcQueue.length-min+1));
+    fcQueue.splice(Math.min(pos,fcQueue.length),0,card);
+  }
+  nextCard();
+}
+function updateMeta(){
+  document.getElementById("fc-left").textContent="Quedan: "+fcQueue.length;
+  document.getElementById("fc-known").textContent="Sabidas: "+fcKnown+" / "+fcTotal;
+  document.getElementById("fc-bar").style.width=(fcTotal?(fcKnown/fcTotal*100):0)+"%";
+}
+function finishDeck(){
+  fcCurrent=null;
+  document.getElementById("fc-stage").classList.add("hidden");
+  document.getElementById("fc-done").classList.remove("hidden");
+  document.getElementById("fc-done-txt").textContent="Has dominado las "+fcTotal+" tarjetas de esta ronda.";
+}
+function speakCurrent(){ if(fcCurrent) speak(fcCurrent.de); }
+
+document.addEventListener("keydown",e=>{
+  if(!document.getElementById("v6").classList.contains("active")) return;
+  if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA") return;
+  if(e.code==="Space"){ e.preventDefault(); flipCard(); }
+  if(e.key==="1" && fcFlipped) answerCard(false);
+  if(e.key==="2" && fcFlipped) answerCard(true);
+});
+
+/* =========================================================
+   TEMA
+   ========================================================= */
+const tb=document.getElementById("themeBtn");
+try{
+  const saved=localStorage.getItem("de-theme");
+  if(saved) document.documentElement.setAttribute("data-theme",saved);
+}catch(e){}
+tb.onclick=()=>{
+  const cur=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
+  document.documentElement.setAttribute("data-theme",cur);
+  try{localStorage.setItem("de-theme",cur)}catch(e){}
+};
+
+/* =========================================================
+   INIT
+   ========================================================= */
+renderVocab("vg-wetter-adj",VOC.wetterAdj);
+renderVocab("vg-wetter-verb",VOC.wetterVerb);
+renderVocab("vg-wetter-nomen",VOC.wetterNomen);
+renderVocab("vg-u1",VOC.u1);
+renderVocab("vg-u2",VOC.u2);
+renderVocab("vg-u3",VOC.u3);
+renderVocab("vg-u4",VOC.u4);
+renderMatch();
+startDeck();
+</script>
+</body>
+</html>

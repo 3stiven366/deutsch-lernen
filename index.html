@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deutsch lernen — Material interactivo de alemán</title>
+<meta name="description" content="Páginas interactivas de estudio de alemán B1: explicaciones en español, ejercicios autocorregidos, vocabulario y tarjetas de repaso.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --panel:#ffffff; --panel-2:#fbfaf7;
+  --ink:#1d2430; --ink-2:#56606f; --ink-3:#8b95a3; --line:#e2ddd3;
+  --accent:#2f6f5e; --accent-soft:#e3efea;
+  --accent-2:#b4531f; --accent-2-soft:#fbeade;
+  --shadow:0 1px 2px rgba(29,36,48,.06), 0 8px 24px rgba(29,36,48,.05);
+  --shadow-lg:0 2px 4px rgba(29,36,48,.07), 0 18px 44px rgba(29,36,48,.10);
+}
+html[data-theme="dark"]{
+  --bg:#14171c; --panel:#1c2026; --panel-2:#20252c;
+  --ink:#e8eaed; --ink-2:#aab3bf; --ink-3:#7d8794; --line:#2e343d;
+  --accent:#5fbfa3; --accent-soft:#1d2e2a;
+  --accent-2:#e2905c; --accent-2-soft:#2e241d;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  --shadow-lg:0 2px 4px rgba(0,0,0,.35), 0 18px 44px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px 100px}
+a{color:inherit}
+
+/* ---------- hero ---------- */
+header.hero{padding:clamp(48px,9vw,96px) 0 10px;position:relative}
+.kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2);font-weight:700;margin:0 0 10px}
+h1{font-family:Fraunces,Georgia,serif;font-size:clamp(34px,7vw,60px);line-height:1.04;margin:0 0 18px;
+   font-weight:600;letter-spacing:-.02em;max-width:16ch}
+h1 .thin{font-weight:400;color:var(--ink-2)}
+.hero p{color:var(--ink-2);margin:0;max-width:60ch;font-size:clamp(16px,2.2vw,18px)}
+.hero .meta{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.pill{font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:999px;
+  background:var(--panel-2);border:1px solid var(--line);color:var(--ink-2)}
+.pill.live{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 30%,transparent);color:var(--accent)}
+
+.hr{height:1px;background:var(--line);margin:44px 0 0;border:0}
+
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(22px,3.6vw,30px);
+   margin:48px 0 6px;letter-spacing:-.01em}
+.section-note{color:var(--ink-3);font-size:14px;margin:0 0 22px}
+
+/* ---------- chapter cards ---------- */
+.chapters{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px;margin-top:4px}
+.ch{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);
+  border-radius:16px;padding:22px 22px 20px;box-shadow:var(--shadow);text-decoration:none;color:inherit;
+  transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;position:relative;overflow:hidden}
+.ch::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--accent);opacity:0;transition:.16s}
+.ch:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:color-mix(in srgb,var(--accent) 35%,var(--line))}
+.ch:hover::before{opacity:1}
+.ch .num{font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent-2);margin-bottom:9px}
+.ch h3{font-family:Fraunces,Georgia,serif;font-size:20px;font-weight:600;line-height:1.25;margin:0 0 7px;letter-spacing:-.01em}
+.ch .sub{font-size:13.5px;color:var(--ink-3);margin:0 0 15px;line-height:1.5}
+.ch .topics{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.ch .topics span{font-size:12px;font-weight:600;padding:4px 9px;border-radius:7px;
+  background:var(--accent-soft);color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 18%,transparent)}
+.ch .go{margin-top:16px;font-size:13.5px;font-weight:700;color:var(--accent);display:flex;align-items:center;gap:6px}
+.ch .go .ar{transition:transform .16s}
+.ch:hover .go .ar{transform:translateX(4px)}
+
+.empty{background:var(--panel-2);border:1px dashed var(--line);border-radius:16px;padding:28px;
+  text-align:center;color:var(--ink-3);font-size:14.5px}
+
+/* ---------- features ---------- */
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px;margin-top:10px}
+.feat{padding:0}
+.feat .ic{font-size:20px;margin-bottom:8px;display:block}
+.feat h4{margin:0 0 5px;font-size:15px;font-weight:700}
+.feat p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.55}
+
+.callout{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:22px}
+.callout p{margin:0;font-size:14.5px;color:var(--ink-2)}
+.callout p+p{margin-top:10px}
+code{font-family:'JetBrains Mono',monospace;font-size:13px;background:var(--panel);
+  border:1px solid var(--line);border-radius:5px;padding:2px 6px}
+
+footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);
+  color:var(--ink-3);font-size:13px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer a{color:var(--accent);text-decoration:none;font-weight:600}
+footer a:hover{text-decoration:underline}
+
+.theme-btn{position:fixed;right:18px;bottom:18px;z-index:70;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;font-size:18px;
+  box-shadow:var(--shadow);display:grid;place-items:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="kicker">Deutsch · Niveau B1</p>
+  <h1>Material interactivo <span class="thin">para estudiar alemán</span></h1>
+  <p>Cada capítulo de mi libro convertido en una página de estudio: la gramática explicada en español, ejercicios que se corrigen solos, el vocabulario con traducción y tarjetas de repaso. Todo en una sola página, sin instalar nada.</p>
+  <div class="meta">
+    <span class="pill live" id="count">— capítulos</span>
+    <span class="pill">Explicaciones en español</span>
+    <span class="pill">Ejercicios autocorregidos</span>
+    <span class="pill">Modo claro / oscuro</span>
+  </div>
+  <hr class="hr">
+</header>
+
+<main>
+  <h2>Capítulos</h2>
+  <p class="section-note">Del más reciente al más antiguo.</p>
+  <div class="chapters" id="chapters"></div>
+
+  <h2>Qué hay en cada página</h2>
+  <p class="section-note">La estructura es siempre la misma, así que no hay que reaprender a usarla.</p>
+  <div class="feats">
+    <div class="feat">
+      <span class="ic">📖</span>
+      <h4>Explicación primero</h4>
+      <p>Las reglas en español, con tablas, formas irregulares, errores típicos y dónde interfiere el español.</p>
+    </div>
+    <div class="feat">
+      <span class="ic">✍️</span>
+      <h4>Ejercicios que se corrigen</h4>
+      <p>Huecos, opción múltiple, unir con clic y transformación de frases. Verde si está bien, rojo si no.</p>
+    </div>
+    <div class="feat">
+      <span class="ic">🔤</span>
+      <h4>Vocabulario oculto</h4>
+      <p>La traducción está tapada para autoevaluarte: aparece al pasar el cursor, con botón de pronunciación.</p>
+    </div>
+    <div class="feat">
+      <span class="ic">🃏</span>
+      <h4>Tarjetas de repaso</h4>
+      <p>Mazos combinables en ambas direcciones. Las que sabes desaparecen; las que fallas vuelven después.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><strong>Sobre el contenido.</strong> Estas páginas son material de estudio personal, hecho a partir de las páginas de mi libro de clase. Las explicaciones, los ejercicios añadidos y las listas de vocabulario son una reelaboración propia, no una copia del libro.</p>
+    <p><strong>Cómo usarlas.</strong> Abre el capítulo y recórrelo pestaña por pestaña. Todo funciona sin conexión: puedes guardar la página y seguir estudiando sin internet.</p>
+  </div>
+</main>
+
+<footer>
+  <span>Material de estudio personal · Deutsch B1</span>
+  <span><a href="https://github.com/3stiven366/deutsch-lernen">Código en GitHub</a></span>
+</footer>
+</div>
+
+<button class="theme-btn" id="themeBtn" title="Modo claro / oscuro">◐</button>
+
+<script>
+/* =========================================================================
+   LISTA DE CAPÍTULOS
+   -------------------------------------------------------------------------
+   Para añadir un capítulo nuevo: copia un bloque { ... } y cámbialo.
+   Lo demás de la página se actualiza solo (el orden y el contador).
+   ========================================================================= */
+const CHAPTERS = [
+  {
+    num: 6,
+    file: "kapitel/kapitel-06-zukunft-ndeklination.html",
+    title: "Zukunft, n-Deklination und Relativsätze",
+    sub: "Gute Vorsätze · Stadt der Zukunft · Wettersatelliten",
+    topics: ["Futur I", "n-Deklination", "Relativsätze", "ss / ß"]
+  },
+  {
+    num: 5,
+    file: "kapitel/kapitel-05-umwelt-wetter.html",
+    title: "Umwelt, Wetter und Grammatik",
+    sub: "Vorsätze für die Umwelt · Das Wetter in D-A-CH",
+    topics: ["Komparativ & Superlativ", "damit / um … zu", "Deklination", "Wortschatz Umwelt"]
+  }
+];
+
+/* ------------------------------------------------------------------ */
+const cont = document.getElementById("chapters");
+const list = [...CHAPTERS].sort((a, b) => b.num - a.num);
+
+if (list.length === 0) {
+  cont.innerHTML = '<div class="empty">Todavía no hay capítulos publicados.</div>';
+} else {
+  cont.innerHTML = list.map(c => `
+    <a class="ch" href="${c.file}">
+      <span class="num">Kapitel ${String(c.num).padStart(2, "0")}</span>
+      <h3>${c.title}</h3>
+      <p class="sub">${c.sub}</p>
+      <div class="topics">${c.topics.map(t => `<span>${t}</span>`).join("")}</div>
+      <span class="go">Abrir capítulo <span class="ar">→</span></span>
+    </a>`).join("");
+}
+
+document.getElementById("count").textContent =
+  list.length === 1 ? "1 capítulo" : list.length + " capítulos";
+
+/* tema claro / oscuro — comparte la preferencia con las páginas de capítulo */
+const tb = document.getElementById("themeBtn");
+try {
+  const saved = localStorage.getItem("de-theme");
+  if (saved) document.documentElement.setAttribute("data-theme", saved);
+} catch (e) {}
+tb.onclick = () => {
+  const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("de-theme", next); } catch (e) {}
+};
+</script>
+</body>
+</html>
