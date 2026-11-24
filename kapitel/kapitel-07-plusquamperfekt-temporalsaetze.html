@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deutsch B1 — Kapitel 7: Plusquamperfekt und temporale Nebensätze</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --panel:#ffffff; --panel-2:#fbfaf7;
+  --ink:#1d2430; --ink-2:#56606f; --ink-3:#8b95a3; --line:#e2ddd3;
+  --accent:#2f6f5e; --accent-soft:#e3efea;
+  --accent-2:#b4531f; --accent-2-soft:#fbeade;
+  --ok:#1f7a45; --ok-bg:#e4f4ea; --bad:#b32d2d; --bad-bg:#fbe6e4;
+  --shadow:0 1px 2px rgba(29,36,48,.06), 0 8px 24px rgba(29,36,48,.05);
+  --radius:14px;
+}
+html[data-theme="dark"]{
+  --bg:#14171c; --panel:#1c2026; --panel-2:#20252c;
+  --ink:#e8eaed; --ink-2:#aab3bf; --ink-3:#7d8794; --line:#2e343d;
+  --accent:#5fbfa3; --accent-soft:#1d2e2a;
+  --accent-2:#e2905c; --accent-2-soft:#2e241d;
+  --ok:#5bc98a; --ok-bg:#17301f; --bad:#f08a84; --bad-bg:#331b1a;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px 120px}
+
+header.top{padding:40px 0 18px}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2);font-weight:700;margin:0 0 6px}
+h1{font-family:Fraunces,Georgia,serif;font-size:clamp(28px,5vw,42px);line-height:1.1;margin:0 0 10px;font-weight:600;letter-spacing:-.01em}
+.sub{color:var(--ink-2);margin:0;max-width:64ch}
+.backlink{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;color:var(--ink-3);text-decoration:none;margin-bottom:18px}
+.backlink:hover{color:var(--accent)}
+
+nav.tabs{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin:22px -20px 0;padding:8px 20px}
+.tabs-inner{max-width:1000px;margin:0 auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.tabs-inner::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:14px;font-weight:600;
+  cursor:pointer;padding:9px 13px;border-radius:9px;white-space:nowrap;transition:.15s}
+.tab:hover{color:var(--ink);background:var(--panel-2)}
+.tab.active{background:var(--accent);color:#fff}
+
+section.view{display:none;padding-top:28px;animation:fade .25s ease}
+section.view.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(22px,3.4vw,30px);margin:34px 0 4px;letter-spacing:-.01em}
+h2:first-child{margin-top:0}
+h3{font-size:16px;font-weight:700;margin:26px 0 10px}
+h3 .num{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:6px;background:var(--accent);
+  color:#fff;font-size:12px;margin-right:8px;vertical-align:1px}
+.lede{color:var(--ink-2);margin:0 0 18px;max-width:72ch}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin:16px 0;box-shadow:var(--shadow)}
+.card.flat{box-shadow:none;background:var(--panel-2)}
+.note{border-left:3px solid var(--accent-2);background:var(--accent-2-soft);border-radius:0 10px 10px 0;padding:12px 16px;margin:16px 0;font-size:15px}
+.note b{color:var(--accent-2)}
+.note.add{border-left-color:var(--ink-3);background:var(--panel-2)}
+.note.add b{color:var(--ink-2)}
+.rule{background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 25%,transparent);border-radius:10px;padding:14px 16px;margin:14px 0}
+.rule .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--accent);display:block;margin-bottom:6px}
+.rule.warn{background:var(--bad-bg);border-color:color-mix(in srgb,var(--bad) 30%,transparent)}
+.rule.warn .lbl{color:var(--bad)}
+
+.de{font-weight:600;color:var(--ink)}
+.ex{font-family:Fraunces,Georgia,serif;font-size:17px;line-height:1.75;margin:4px 0}
+.ex .hl{color:var(--accent-2);font-weight:700}
+.ex .hl2{color:var(--accent);font-weight:700}
+.ex u{text-decoration-color:var(--ink-3);text-underline-offset:3px}
+.wrong{color:var(--bad)}
+.right{color:var(--ok)}
+code.k{font-family:'JetBrains Mono',monospace;background:var(--panel-2);padding:2px 7px;border-radius:6px;border:1px solid var(--line);font-size:13.5px}
+
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px;margin:12px 0}
+.tbl th,.tbl td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--panel-2);font-weight:700;font-size:13px}
+.tbl td.k{font-weight:600;background:var(--panel-2);white-space:nowrap}
+.tbl .end{color:var(--accent-2);font-weight:700}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+.tt{border-bottom:1.5px dotted var(--accent);cursor:help;position:relative}
+.tt::after{content:attr(data-es);position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) translateY(4px);
+  background:var(--ink);color:var(--bg);font-family:Inter,sans-serif;font-size:13px;font-weight:500;line-height:1.4;
+  padding:7px 11px;border-radius:8px;white-space:normal;width:max-content;max-width:250px;opacity:0;pointer-events:none;
+  transition:.16s;z-index:60;box-shadow:0 6px 20px rgba(0,0,0,.2);text-align:center}
+.tt::before{content:"";position:absolute;left:50%;bottom:calc(100% + 3px);transform:translateX(-50%) translateY(4px);
+  border:5px solid transparent;border-top-color:var(--ink);opacity:0;transition:.16s;z-index:60;pointer-events:none}
+.tt:hover::after,.tt:hover::before,.tt.show::after,.tt.show::before{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.ex-block{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin:18px 0;box-shadow:var(--shadow)}
+.ex-head{display:flex;align-items:baseline;gap:10px;margin-bottom:4px;flex-wrap:wrap}
+.ex-head .tag{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:3px 8px;border-radius:5px}
+.ex-head .tag.b{background:var(--accent-2)}
+.ex-head .tag.g{background:var(--ink-3)}
+.ex-head h4{margin:0;font-size:16px;font-weight:700}
+.ex-hint{color:var(--ink-3);font-size:13.5px;margin:2px 0 14px}
+.pool{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 16px;padding:11px 13px;background:var(--panel-2);border:1px dashed var(--line);border-radius:10px}
+.pool span{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;color:var(--accent)}
+
+ol.q{margin:0;padding-left:26px}
+ol.q>li{margin:0 0 13px;line-height:2.05;font-size:15.5px}
+ol.q>li::marker{color:var(--ink-3);font-weight:600;font-size:13px}
+ul.plain{margin:0;padding-left:20px}
+ul.plain li{margin:0 0 7px}
+
+input.gap{font:inherit;font-size:15px;font-weight:600;border:0;border-bottom:2px solid var(--line);background:var(--panel-2);
+  color:var(--ink);padding:3px 8px;border-radius:5px 5px 0 0;width:150px;transition:.15s;outline:none}
+input.gap:focus{border-bottom-color:var(--accent);background:var(--accent-soft)}
+input.gap.w-xs{width:62px}
+input.gap.w-s{width:95px}
+input.gap.w-l{width:240px}
+input.gap.ok{background:var(--ok-bg);border-bottom-color:var(--ok);color:var(--ok)}
+input.gap.bad{background:var(--bad-bg);border-bottom-color:var(--bad);color:var(--bad)}
+textarea.gap{font:inherit;font-size:15px;width:100%;min-height:52px;resize:vertical;border:1px solid var(--line);
+  border-radius:9px;background:var(--panel-2);color:var(--ink);padding:9px 11px;outline:none;margin-top:5px;line-height:1.55}
+textarea.gap:focus{border-color:var(--accent);background:var(--accent-soft)}
+textarea.gap.ok{background:var(--ok-bg);border-color:var(--ok)}
+textarea.gap.bad{background:var(--bad-bg);border-color:var(--bad)}
+.cue{color:var(--ink-3);font-size:14px;font-style:italic}
+.sol{display:none;margin-top:4px;font-size:14px;color:var(--ok);font-weight:600}
+.sol.show{display:block}
+.sol::before{content:"✓ "}
+
+.mc{display:inline-flex;gap:6px;flex-wrap:wrap;vertical-align:middle;margin:0 4px}
+.mc label{font-size:14px;font-weight:600;padding:4px 11px;border-radius:7px;border:1.5px solid var(--line);
+  background:var(--panel-2);cursor:pointer;transition:.13s;user-select:none}
+.mc label:hover{border-color:var(--accent)}
+.mc input{position:absolute;opacity:0;width:0;height:0}
+.mc label:has(input:checked){background:var(--accent);border-color:var(--accent);color:#fff}
+.mc.graded label.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.mc.graded label.bad{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+
+.btns{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px;align-items:center}
+button.b{font:inherit;font-size:14px;font-weight:600;cursor:pointer;border:1.5px solid var(--line);background:var(--panel-2);
+  color:var(--ink);padding:8px 16px;border-radius:9px;transition:.13s}
+button.b:hover{border-color:var(--accent);color:var(--accent)}
+button.b.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+button.b.primary:hover{filter:brightness(1.08);color:#fff}
+button.b.ghost{background:transparent;border-color:transparent;color:var(--ink-3)}
+button.b.ghost:hover{color:var(--accent);border-color:var(--line)}
+.score{font-size:14px;font-weight:700;padding:6px 13px;border-radius:8px;background:var(--panel-2);border:1px solid var(--line)}
+.score.good{background:var(--ok-bg);color:var(--ok);border-color:var(--ok)}
+.score.mid{background:var(--accent-2-soft);color:var(--accent-2);border-color:var(--accent-2)}
+.score.poor{background:var(--bad-bg);color:var(--bad);border-color:var(--bad)}
+
+.match{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:700px){.match{grid-template-columns:1fr;gap:14px}}
+.match .col h5{margin:0 0 9px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.mitem{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;font:inherit;font-size:14.5px;line-height:1.45;
+  border:1.5px solid var(--line);background:var(--panel-2);color:var(--ink);padding:10px 12px;border-radius:10px;margin-bottom:8px;cursor:pointer;transition:.13s}
+.mitem:hover{border-color:var(--accent)}
+.mitem.sel{border-color:var(--accent);background:var(--accent-soft);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+.mitem.used{opacity:.5}
+.mitem .idx{flex:0 0 auto;width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:var(--ink-3);color:var(--panel);font-size:12px;font-weight:700}
+.mitem .slot{flex:0 0 auto;margin-left:auto;min-width:26px;height:24px;border-radius:6px;border:1.5px dashed var(--line);
+  display:grid;place-items:center;font-size:12.5px;font-weight:700;color:var(--ink-3);padding:0 5px}
+.mitem .slot.filled{border-style:solid;border-color:var(--accent);background:var(--accent);color:#fff}
+.mitem.ok{border-color:var(--ok);background:var(--ok-bg)}
+.mitem.ok .slot{background:var(--ok);border-color:var(--ok);color:#fff}
+.mitem.bad{border-color:var(--bad);background:var(--bad-bg)}
+.mitem.bad .slot{background:var(--bad);border-color:var(--bad);color:#fff}
+
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:9px;margin:12px 0}
+.vitem{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:9px 12px;display:flex;align-items:center;gap:8px}
+.vitem .w{font-weight:600;font-size:15px;flex:1}
+.vitem .es{display:none;font-weight:400;font-size:13px;color:var(--ink-3);margin-top:1px}
+.vgrid.show-es .es{display:block}
+.vtoggle{display:flex;align-items:center;gap:10px;margin:14px 0 2px;flex-wrap:wrap}
+.spk{flex:0 0 auto;border:0;background:transparent;cursor:pointer;color:var(--ink-3);font-size:15px;padding:3px;border-radius:6px;line-height:1;transition:.13s}
+.spk:hover{color:var(--accent);background:var(--accent-soft)}
+
+.phrases{margin:10px 0;padding:0;list-style:none}
+.phrases li{padding:8px 0 8px 20px;border-bottom:1px dashed var(--line);position:relative;font-size:15.5px}
+.phrases li:last-child{border-bottom:0}
+.phrases li::before{content:"›";position:absolute;left:4px;color:var(--accent);font-weight:700}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:760px){.cols2{grid-template-columns:1fr}}
+
+.timeline{display:flex;align-items:stretch;gap:0;margin:16px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.timeline .seg{flex:1;padding:14px 16px;background:var(--panel-2);border-right:1px solid var(--line)}
+.timeline .seg:last-child{border-right:0}
+.timeline .seg .t{font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--ink-3);margin-bottom:5px}
+.timeline .seg.first{background:var(--accent-soft)}
+.timeline .seg.first .t{color:var(--accent)}
+.timeline .seg .v{font-family:Fraunces,serif;font-size:15px;font-weight:600}
+@media(max-width:600px){.timeline{flex-direction:column}.timeline .seg{border-right:0;border-bottom:1px solid var(--line)}.timeline .seg:last-child{border-bottom:0}}
+
+.fc-setup{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-end;margin-bottom:18px}
+.fgroup{display:flex;flex-direction:column;gap:7px}
+.fgroup .flbl{font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:700;color:var(--ink-3)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font:inherit;font-size:13.5px;font-weight:600;padding:6px 13px;border-radius:999px;border:1.5px solid var(--line);
+  background:var(--panel-2);color:var(--ink-2);cursor:pointer;transition:.13s}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.pbar{height:6px;background:var(--line);border-radius:999px;overflow:hidden;margin-bottom:14px}
+.pbar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.fc-meta{display:flex;justify-content:space-between;font-size:13px;color:var(--ink-3);margin-bottom:12px;font-weight:600}
+.flashcard{background:var(--panel);border:1px solid var(--line);border-radius:18px;min-height:230px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;padding:36px 26px 32px;box-shadow:var(--shadow);cursor:pointer;position:relative;transition:.18s;user-select:none}
+.flashcard:hover{border-color:var(--accent)}
+.fc-dir{position:absolute;top:13px;left:16px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ink-3)}
+.fc-spk{position:absolute;top:9px;right:12px;font-size:19px}
+.fc-front{font-family:Fraunces,Georgia,serif;font-size:clamp(21px,4vw,31px);font-weight:600;line-height:1.25}
+.fc-back{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);font-size:clamp(17px,3.2vw,22px);color:var(--accent);font-weight:600;width:100%;max-width:470px}
+.fc-tap{color:var(--ink-3);font-size:13.5px;margin-top:16px}
+.fc-actions{display:flex;gap:10px;margin-top:14px}
+.fc-actions button{flex:1;padding:14px;font-size:15px;font-weight:700;border-radius:11px;cursor:pointer;font-family:inherit;border:1.5px solid}
+.fc-no{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.fc-yes{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.fc-done{text-align:center;padding:40px 20px}
+.fc-done .big{font-family:Fraunces,serif;font-size:34px;font-weight:600;margin-bottom:6px}
+.kbd{font-family:'JetBrains Mono',monospace;font-size:11.5px;background:var(--panel-2);border:1px solid var(--line);
+  border-bottom-width:2px;border-radius:5px;padding:1px 5px;color:var(--ink-2)}
+
+.theme-btn{position:fixed;right:18px;bottom:18px;z-index:70;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);cursor:pointer;font-size:18px;box-shadow:var(--shadow);display:grid;place-items:center}
+footer{margin-top:50px;padding-top:20px;border-top:1px solid var(--line);color:var(--ink-3);font-size:13px}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a class="backlink" href="../index.html">← Volver al índice</a>
+  <p class="kicker">Deutsch B1 · Kapitel 7</p>
+  <h1>Plusquamperfekt und temporale Nebensätze</h1>
+  <p class="sub">Freundschaft · Konflikte · Modalpartikeln. Explicación y después ejercicios en cada pestaña. Pasa el cursor sobre las palabras <span class="tt" data-es="marcadas con puntos, como esta">markiert</span> para ver la traducción.</p>
+</header>
+
+<nav class="tabs">
+  <div class="tabs-inner" id="tabs">
+    <button class="tab active" data-view="v1">1 · Plusquamperfekt</button>
+    <button class="tab" data-view="v2">2 · Temporale Nebensätze</button>
+    <button class="tab" data-view="v3">3 · Modalpartikeln</button>
+    <button class="tab" data-view="v4">4 · Wortschatz</button>
+    <button class="tab" data-view="v5">5 · Redemittel</button>
+    <button class="tab" data-view="v6">6 · Karteikarten</button>
+    <button class="tab" data-view="v7">7 · Mini-Test</button>
+  </div>
+</nav>
+
+<!-- ===================== 1. PLUSQUAMPERFEKT ===================== -->
+<section class="view active" id="v1">
+  <h2>Plusquamperfekt — die Vorvergangenheit</h2>
+  <p class="lede">Sirve para marcar que algo pasó <strong>antes</strong> de otra cosa que ya está en pasado. Es el «pasado del pasado»: cuando cuentas algo en pretérito y necesitas retroceder un paso más.</p>
+
+  <div class="card">
+    <h3 style="margin-top:0">Los tres niveles temporales</h3>
+    <div class="timeline">
+      <div class="seg first"><div class="t">noch früher → Plusquamperfekt</div><div class="v">Ich <span class="hl2">hatte</span> schon <span class="hl2">gegessen</span></div></div>
+      <div class="seg"><div class="t">früher → Präteritum / Perfekt</div><div class="v">, als er <span class="hl">kam</span>.</div></div>
+      <div class="seg"><div class="t">jetzt → Präsens</div><div class="v">Jetzt esse ich.</div></div>
+    </div>
+    <p style="margin:6px 0 0;font-size:15px;color:var(--ink-2)">«Ya había comido cuando él llegó.» Comer ocurre <em>antes</em> que llegar, y llegar ya es pasado — por eso comer necesita el Plusquamperfekt.</p>
+  </div>
+
+  <div class="rule">
+    <span class="lbl">Formación</span>
+    <p style="margin:0 0 6px;font-size:15.5px"><code class="k">hatte</code> <strong>o</strong> <code class="k">war</code> (en Präteritum) + <strong>Partizip II</strong> al final.</p>
+    <p class="ex" style="margin:0">Ich <span class="hl2">hatte</span> das Buch <span class="hl2">gelesen</span>. · Sie <span class="hl2">war</span> nach Berlin <span class="hl2">gefahren</span>.</p>
+  </div>
+
+  <h3><span class="num">A</span>Conjugación de los auxiliares</h3>
+  <div class="cols2">
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th>haben → Präteritum</th><th></th></tr>
+      <tr><td class="k">ich</td><td>hatte</td></tr>
+      <tr><td class="k">du</td><td>hattest</td></tr>
+      <tr><td class="k">er/sie/es</td><td>hatte</td></tr>
+      <tr><td class="k">wir</td><td>hatten</td></tr>
+      <tr><td class="k">ihr</td><td>hattet</td></tr>
+      <tr><td class="k">sie/Sie</td><td>hatten</td></tr>
+    </table>
+    </div>
+    <div class="scroll">
+    <table class="tbl">
+      <tr><th>sein → Präteritum</th><th></th></tr>
+      <tr><td class="k">ich</td><td>war</td></tr>
+      <tr><td class="k">du</td><td>warst</td></tr>
+      <tr><td class="k">er/sie/es</td><td>war</td></tr>
+      <tr><td class="k">wir</td><td>waren</td></tr>
+      <tr><td class="k">ihr</td><td>wart</td></tr>
+      <tr><td class="k">sie/Sie</td><td>waren</td></tr>
+    </table>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>¿haben o sein?</b> Exactamente las mismas reglas que en el Perfekt. <strong>sein</strong> con verbos de movimiento (<i>gehen, fahren, kommen, fliegen</i>) y de cambio de estado (<i>aufstehen, einschlafen, werden, sterben</i>). <strong>haben</strong> con todo lo demás. Si ya sabes decir <i>ich bin gegangen</i> / <i>ich habe gemacht</i>, solo cambias el presente del auxiliar por el pretérito: <i>ich <b>war</b> gegangen</i> / <i>ich <b>hatte</b> gemacht</i>.
+  </div>
+
+  <div class="note add">
+    <b>Buena noticia para hispanohablantes.</b> El Plusquamperfekt funciona casi igual que el pluscuamperfecto español: <i>hatte gemacht</i> = «había hecho», <i>war gegangen</i> = «había ido». El único ajuste mental es que el alemán usa dos auxiliares (<i>haben</i> y <i>sein</i>) donde el español usa solo «haber».
+  </div>
+
+  <div class="rule warn">
+    <span class="lbl">Errores típicos</span>
+    <ul class="plain" style="margin:0;font-size:15px">
+      <li><span class="wrong">✗ Ich habe gegessen gehabt.</span> → el auxiliar va en <strong>Präteritum</strong>, no en Perfekt: <span class="right">✓ Ich hatte gegessen.</span></li>
+      <li><span class="wrong">✗ Sie hatte nach Hause gegangen.</span> → <i>gehen</i> es movimiento, va con <i>sein</i>: <span class="right">✓ Sie war nach Hause gegangen.</span></li>
+      <li>El Partizip II va <strong>al final</strong> de la oración, igual que en el Perfekt.</li>
+    </ul>
+  </div>
+
+  <div class="ex-block" id="ex1">
+    <div class="ex-head"><span class="tag">Übung 1</span><h4>Plusquamperfekt bilden</h4></div>
+    <p class="ex-hint">Escribe el auxiliar (<i>hatte</i> / <i>war</i>, conjugado) y el Partizip II al final.</p>
+    <ol class="q">
+      <li>Ich <input class="gap w-s" data-answer="hatte"> den Film schon <input class="gap" data-answer="gesehen">. <span class="cue">(sehen)</span></li>
+      <li>Sie <input class="gap w-s" data-answer="war"> früh <input class="gap" data-answer="aufgestanden">. <span class="cue">(aufstehen)</span></li>
+      <li>Wir <input class="gap w-s" data-answer="hatten"> uns lange nicht <input class="gap" data-answer="gesehen">. <span class="cue">(sich sehen)</span></li>
+      <li>Nachdem er <input class="gap w-s" data-answer="war"> <input class="gap" data-answer="angekommen">, rief er mich an. <span class="cue">(ankommen)</span></li>
+      <li>Du <input class="gap w-s" data-answer="hattest"> das schon <input class="gap" data-answer="gewusst">. <span class="cue">(wissen)</span></li>
+      <li>Meine Freunde <input class="gap w-s" data-answer="waren"> ohne mich ins Kino <input class="gap" data-answer="gegangen">. <span class="cue">(gehen)</span></li>
+      <li>Ihr <input class="gap w-s" data-answer="hattet"> euch über alles <input class="gap" data-answer="gestritten">. <span class="cue">(sich streiten)</span></li>
+      <li>Es <input class="gap w-s" data-answer="hatte"> den ganzen Tag <input class="gap" data-answer="geregnet">. <span class="cue">(regnen)</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex1')">Prüfen</button>
+      <button class="b" onclick="showSol('ex1')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex1')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex1"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex2">
+    <div class="ex-head"><span class="tag b">Übung 2</span><h4>haben oder sein?</h4></div>
+    <p class="ex-hint">Elige el auxiliar correcto en Plusquamperfekt.</p>
+    <ol class="q">
+      <li>Er
+        <span class="mc" data-correct="war"><label><input type="radio" name="q2a" value="hatte"><span>hatte</span></label><label><input type="radio" name="q2a" value="war"><span>war</span></label></span>
+        schon nach Hause gegangen.</li>
+      <li>Ich
+        <span class="mc" data-correct="hatte"><label><input type="radio" name="q2b" value="hatte"><span>hatte</span></label><label><input type="radio" name="q2b" value="war"><span>war</span></label></span>
+        den Brief geschrieben.</li>
+      <li>Wir
+        <span class="mc" data-correct="waren"><label><input type="radio" name="q2c" value="hatten"><span>hatten</span></label><label><input type="radio" name="q2c" value="waren"><span>waren</span></label></span>
+        zu spät angekommen.</li>
+      <li>Sie
+        <span class="mc" data-correct="hatte"><label><input type="radio" name="q2d" value="hatte"><span>hatte</span></label><label><input type="radio" name="q2d" value="war"><span>war</span></label></span>
+        ihre Freundin angerufen.</li>
+      <li>Das Kind
+        <span class="mc" data-correct="war"><label><input type="radio" name="q2e" value="hatte"><span>hatte</span></label><label><input type="radio" name="q2e" value="war"><span>war</span></label></span>
+        sofort eingeschlafen.</li>
+      <li>Ihr
+        <span class="mc" data-correct="hattet"><label><input type="radio" name="q2f" value="hattet"><span>hattet</span></label><label><input type="radio" name="q2f" value="wart"><span>wart</span></label></span>
+        euch versöhnt.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex2')">Prüfen</button>
+      <button class="b ghost" onclick="resetBlock('ex2')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex2"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex3">
+    <div class="ex-head"><span class="tag">Übung 3</span><h4>Ins Plusquamperfekt setzen</h4></div>
+    <p class="ex-hint">Reescribe la frase completa en Plusquamperfekt. La puntuación da igual.</p>
+    <ol class="q">
+      <li>Ich lese das Buch.
+        <textarea class="gap" rows="1" data-answer="Ich hatte das Buch gelesen."></textarea>
+        <span class="sol">Ich hatte das Buch gelesen.</span></li>
+      <li>Sie zieht nach Frankfurt.
+        <textarea class="gap" rows="1" data-answer="Sie war nach Frankfurt gezogen."></textarea>
+        <span class="sol">Sie war nach Frankfurt gezogen.</span></li>
+      <li>Wir lernen viele Leute kennen.
+        <textarea class="gap" rows="1" data-answer="Wir hatten viele Leute kennengelernt."></textarea>
+        <span class="sol">Wir hatten viele Leute kennengelernt.</span></li>
+      <li>Er schläft schnell ein.
+        <textarea class="gap" rows="1" data-answer="Er war schnell eingeschlafen."></textarea>
+        <span class="sol">Er war schnell eingeschlafen.</span></li>
+      <li>Die Freunde verlieren sich aus den Augen.
+        <textarea class="gap" rows="1" data-answer="Die Freunde hatten sich aus den Augen verloren."></textarea>
+        <span class="sol">Die Freunde hatten sich aus den Augen verloren.</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex3')">Prüfen</button>
+      <button class="b" onclick="showSol('ex3')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex3')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex3"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 2. TEMPORALE NEBENSÄTZE ===================== -->
+<section class="view" id="v2">
+  <h2>Temporale Nebensätze</h2>
+  <p class="lede">Cinco conjunciones que sitúan una acción en el tiempo respecto a otra. Todas mandan el verbo conjugado <strong>al final</strong> y piden <strong>coma</strong>. Lo único que cambia es la relación temporal que expresan.</p>
+
+  <div class="scroll">
+  <table class="tbl">
+    <tr><th>Konjunktion</th><th>Bedeutung</th><th>Relación temporal</th></tr>
+    <tr><td class="k">bevor</td><td>antes de que</td><td>la principal ocurre <strong>antes</strong> que la subordinada</td></tr>
+    <tr><td class="k">nachdem</td><td>después de que</td><td>la subordinada ocurre <strong>antes</strong> (ya terminó) → cambio de tiempo</td></tr>
+    <tr><td class="k">während</td><td>mientras</td><td>las dos a la vez (simultáneas)</td></tr>
+    <tr><td class="k">bis</td><td>hasta que</td><td>la acción dura <strong>hasta</strong> un punto final</td></tr>
+    <tr><td class="k">seit / seitdem</td><td>desde que</td><td>desde un punto en el pasado, y <strong>continúa</strong></td></tr>
+  </table>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">bevor vs. nachdem — el contraste clave</h3>
+    <p class="ex" style="margin:0"><span class="hl2">Bevor</span> ich <u>schlafen gehe</u>, <u>lese ich</u> ein Buch. <span class="cue">— primero leo, luego duermo</span></p>
+    <p class="ex" style="margin:4px 0 0"><span class="hl">Nachdem</span> ich <u>gegessen hatte</u>, <u>ging ich</u> spazieren. <span class="cue">— primero comí, luego paseé</span></p>
+    <p style="margin:10px 0 0;font-size:15px;color:var(--ink-2)">Las dos ordenan dos acciones, pero <i>nachdem</i> obliga a usar <strong>tiempos distintos</strong> en cada mitad. Eso es lo que más se falla.</p>
+  </div>
+
+  <h3><span class="num">A</span>La regla de los tiempos con <i>nachdem</i></h3>
+  <p class="ex-hint">La subordinada con <i>nachdem</i> siempre va un paso «más atrás» en el tiempo que la principal. Aquí es donde reaparece el Plusquamperfekt.</p>
+  <div class="scroll">
+  <table class="tbl">
+    <tr><th>Hauptsatz</th><th>Nebensatz mit <i>nachdem</i></th><th>Beispiel</th></tr>
+    <tr><td class="k">Präsens</td><td class="end">Perfekt</td><td><i>Nachdem ich <b>gegessen habe</b>, gehe ich.</i></td></tr>
+    <tr><td class="k">Präteritum</td><td class="end">Plusquamperfekt</td><td><i>Nachdem ich <b>gegessen hatte</b>, ging ich.</i></td></tr>
+    <tr><td class="k">Perfekt <span class="cue">(hablado)</span></td><td class="end">Plusquamperfekt</td><td><i>Nachdem ich <b>gegessen hatte</b>, bin ich gegangen.</i></td></tr>
+  </table>
+  </div>
+
+  <div class="note">
+    <b>Nota contrastiva.</b> No confundas <strong>nachdem</strong> (conjunción + verbo conjugado) con <strong>nach</strong> (preposición + sustantivo). En español «después de» se usa para las dos: «después <em>de que</em> comí» (nachdem + verbo) y «después <em>de</em> la comida» (nach + nombre). Y mientras el español resuelve mucho con «después de + infinitivo», el alemán necesita siempre un verbo conjugado tras <i>nachdem</i>.
+  </div>
+
+  <div class="rule warn">
+    <span class="lbl">Errores típicos</span>
+    <ul class="plain" style="margin:0;font-size:15px">
+      <li><span class="wrong">✗ Nachdem ich esse, gehe ich.</span> → con <i>nachdem</i> hay que adelantar el tiempo: <span class="right">✓ Nachdem ich gegessen habe, gehe ich.</span></li>
+      <li><span class="wrong">✗ Während ich koche, du räumst auf.</span> → el verbo del Nebensatz va al final; y el Hauptsatz que sigue empieza por el verbo: <span class="right">✓ Während ich koche, räumst du auf.</span></li>
+      <li><span class="wrong">✗ Seit ich arbeite bin ich müde.</span> → falta la coma: <span class="right">✓ Seit ich arbeite, bin ich müde.</span></li>
+      <li><i>während</i> también puede ser adversativo («mientras que»), pero aquí es temporal («mientras»).</li>
+    </ul>
+  </div>
+
+  <div class="ex-block" id="ex4">
+    <div class="ex-head"><span class="tag">Übung 4</span><h4>Welche Konjunktion passt?</h4></div>
+    <p class="ex-hint">Elige la conjunción según el sentido.</p>
+    <ol class="q">
+      <li>___ ich in dieser Stadt wohne, habe ich viele Freunde gefunden.
+        <span class="mc" data-correct="seit"><label><input type="radio" name="q4a" value="seit"><span>Seit</span></label><label><input type="radio" name="q4a" value="bevor"><span>Bevor</span></label><label><input type="radio" name="q4a" value="bis"><span>Bis</span></label></span></li>
+      <li>Wir warten hier, ___ der Regen aufhört.
+        <span class="mc" data-correct="bis"><label><input type="radio" name="q4b" value="bis"><span>bis</span></label><label><input type="radio" name="q4b" value="waehrend"><span>während</span></label><label><input type="radio" name="q4b" value="nachdem"><span>nachdem</span></label></span></li>
+      <li>___ ich koche, deckst du bitte den Tisch.
+        <span class="mc" data-correct="waehrend"><label><input type="radio" name="q4c" value="waehrend"><span>Während</span></label><label><input type="radio" name="q4c" value="bevor"><span>Bevor</span></label><label><input type="radio" name="q4c" value="seit"><span>Seit</span></label></span></li>
+      <li>___ du gehst, räum bitte dein Zimmer auf.
+        <span class="mc" data-correct="bevor"><label><input type="radio" name="q4d" value="bevor"><span>Bevor</span></label><label><input type="radio" name="q4d" value="bis"><span>Bis</span></label><label><input type="radio" name="q4d" value="nachdem"><span>Nachdem</span></label></span></li>
+      <li>___ wir uns gestritten hatten, sprachen wir eine Woche nicht.
+        <span class="mc" data-correct="nachdem"><label><input type="radio" name="q4e" value="nachdem"><span>Nachdem</span></label><label><input type="radio" name="q4e" value="waehrend"><span>Während</span></label><label><input type="radio" name="q4e" value="bevor"><span>Bevor</span></label></span></li>
+      <li>___ sie den Job gewechselt hat, ist sie viel entspannter.
+        <span class="mc" data-correct="seitdem"><label><input type="radio" name="q4f" value="seitdem"><span>Seitdem</span></label><label><input type="radio" name="q4f" value="bis"><span>Bis</span></label><label><input type="radio" name="q4f" value="bevor"><span>Bevor</span></label></span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex4')">Prüfen</button>
+      <button class="b ghost" onclick="resetBlock('ex4')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex4"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex5">
+    <div class="ex-head"><span class="tag b">Übung 5</span><h4>Satzhälften verbinden</h4></div>
+    <p class="ex-hint">Clic en la mitad izquierda, luego en el final que encaja por sentido.</p>
+    <div class="match"><div class="col"><h5>Anfang</h5><div id="m-temp-left"></div></div><div class="col"><h5>Ende</h5><div id="m-temp-right"></div></div></div>
+    <div class="btns">
+      <button class="b primary" onclick="checkMatch('temp')">Prüfen</button>
+      <button class="b" onclick="solveMatch('temp')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetMatch('temp')">Zurücksetzen</button>
+      <span class="score hidden" id="s-temp"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex6">
+    <div class="ex-head"><span class="tag">Übung 6</span><h4>nachdem + richtige Zeit</h4></div>
+    <p class="ex-hint">El tiempo del Hauptsatz te dice qué tiempo usar en el Nebensatz. Escribe el verbo completo (auxiliar + Partizip).</p>
+    <ol class="q">
+      <li>Nachdem sie in die neue Stadt <input class="gap" data-answer="gezogen war">, fühlte sie sich zuerst einsam. <span class="cue">(ziehen · Hauptsatz Präteritum)</span></li>
+      <li>Nachdem ich mein Studium <input class="gap" data-answer="beendet habe">, suche ich einen Job. <span class="cue">(beenden · Hauptsatz Präsens)</span></li>
+      <li>Nachdem wir uns <input class="gap" data-answer="gestritten hatten">, haben wir uns wieder vertragen. <span class="cue">(sich streiten · Hauptsatz Perfekt)</span></li>
+      <li>Nachdem er die Prüfung <input class="gap" data-answer="bestanden hatte">, feierte er mit Freunden. <span class="cue">(bestehen · Hauptsatz Präteritum)</span></li>
+      <li>Nachdem du <input class="gap" data-answer="angekommen bist">, rufst du mich an, okay? <span class="cue">(ankommen · Hauptsatz Präsens)</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex6')">Prüfen</button>
+      <button class="b" onclick="showSol('ex6')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex6')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex6"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex7">
+    <div class="ex-head"><span class="tag b">Übung 7</span><h4>Sätze verbinden</h4></div>
+    <p class="ex-hint">Une las dos frases con la conjunción indicada. Escribe la frase completa empezando por el Nebensatz.</p>
+    <ol class="q">
+      <li><b>(während)</b> Ich räume auf. Du kochst das Essen.
+        <textarea class="gap" rows="1" data-answer="Während ich aufräume, kochst du das Essen."></textarea>
+        <span class="sol">Während ich aufräume, kochst du das Essen.</span></li>
+      <li><b>(bevor)</b> Ich gehe schlafen. Ich lese noch ein bisschen.
+        <textarea class="gap" rows="1" data-answer="Bevor ich schlafen gehe, lese ich noch ein bisschen."></textarea>
+        <span class="sol">Bevor ich schlafen gehe, lese ich noch ein bisschen.</span></li>
+      <li><b>(seit)</b> Wir wohnen zusammen. Wir verstehen uns super.
+        <textarea class="gap" rows="1" data-answer="Seit wir zusammen wohnen, verstehen wir uns super.|Seitdem wir zusammen wohnen, verstehen wir uns super."></textarea>
+        <span class="sol">Seit wir zusammen wohnen, verstehen wir uns super.</span></li>
+      <li><b>(bis)</b> Wir warten. Du kommst zurück.
+        <textarea class="gap" rows="1" data-answer="Wir warten, bis du zurückkommst."></textarea>
+        <span class="sol">Wir warten, bis du zurückkommst.</span></li>
+      <li><b>(nachdem)</b> Sie hatte umgezogen. Sie fühlte sich einsam.
+        <textarea class="gap" rows="2" data-answer="Nachdem sie umgezogen war, fühlte sie sich einsam."></textarea>
+        <span class="sol">Nachdem sie umgezogen war, fühlte sie sich einsam.</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex7')">Prüfen</button>
+      <button class="b" onclick="showSol('ex7')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex7')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex7"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. MODALPARTIKELN ===================== -->
+<section class="view" id="v3">
+  <h2>Modalpartikeln</h2>
+  <p class="lede">Son palabritas (<i>aber, denn, ja, mal, wohl</i>) que no cambian el significado literal de la frase, pero le añaden <strong>color emocional</strong>: sorpresa, interés, cercanía, suposición. Son dificilísimas de traducir porque el español suele expresar eso con la entonación.</p>
+
+  <div class="scroll">
+  <table class="tbl">
+    <tr><th>Partikel</th><th>Función</th><th>Beispiel</th><th>Matiz en español</th></tr>
+    <tr><td class="k">aber</td><td>sorpresa (Überraschung)</td><td>Das ist <b>aber</b> schön!</td><td>¡Qué bonito! (no me lo esperaba)</td></tr>
+    <tr><td class="k">denn</td><td>interés — solo en preguntas</td><td>Wo warst du <b>denn</b>?</td><td>¿Y dónde estabas? (con curiosidad)</td></tr>
+    <tr><td class="k">ja</td><td>conocimiento compartido</td><td>Das weißt du <b>ja</b>.</td><td>Eso ya lo sabes / como bien sabes</td></tr>
+    <tr><td class="k">mal</td><td>suaviza una petición</td><td>Komm <b>mal</b> her!</td><td>Ven un momento (amable, no orden seca)</td></tr>
+    <tr><td class="k">wohl</td><td>suposición (Vermutung)</td><td>Er ist <b>wohl</b> krank.</td><td>Estará enfermo / seguramente está enfermo</td></tr>
+  </table>
+  </div>
+
+  <div class="note">
+    <b>¿Dónde van?</b> Normalmente en el <strong>medio</strong> de la frase, después del verbo y del sujeto, justo antes de la información importante. <span class="ex">Du hast <b>ja</b> recht.</span> · <span class="ex">Warte <b>mal</b>!</span> · <span class="ex">Wann kommt sie <b>denn</b>?</span>
+  </div>
+
+  <div class="note add">
+    <b>Cómo estudiarlas.</b> No intentes traducirlas palabra por palabra — no tienen equivalente fijo. Aprende cada una <strong>pegada a su función</strong>: <i>denn</i> = pregunta con interés, <i>wohl</i> = suposición, <i>aber</i> = sorpresa. Si captas la función, las usas bien aunque no las «traduzcas».
+  </div>
+
+  <div class="ex-block" id="ex8">
+    <div class="ex-head"><span class="tag">Übung 8</span><h4>Welche Partikel passt?</h4></div>
+    <p class="ex-hint">Elige la partícula según el matiz que pide el contexto.</p>
+    <ol class="q">
+      <li>— Ich muss jetzt leider gehen. — Warte <input class="gap w-s" data-answer="mal">, nur eine Minute! <span class="cue">(petición amable)</span></li>
+      <li>— Mark kommt heute nicht. — Er ist <input class="gap w-s" data-answer="wohl"> noch krank. <span class="cue">(suposición)</span></li>
+      <li>— Wann fängt der Film <input class="gap w-s" data-answer="denn"> an? <span class="cue">(pregunta con interés)</span></li>
+      <li>— Wir ziehen nächsten Monat um. — Das ist <input class="gap w-s" data-answer="aber"> überraschend! <span class="cue">(sorpresa)</span></li>
+      <li>— Du kennst Lisa doch. Sie ist <input class="gap w-s" data-answer="ja"> immer pünktlich. <span class="cue">(ambos lo saben)</span></li>
+      <li>— Wo wohnst du <input class="gap w-s" data-answer="denn"> jetzt? <span class="cue">(pregunta con interés)</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex8')">Prüfen</button>
+      <button class="b" onclick="showSol('ex8')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex8')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex8"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex9">
+    <div class="ex-head"><span class="tag b">Übung 9</span><h4>Partikel und Funktion</h4></div>
+    <p class="ex-hint">Une cada partícula con su función.</p>
+    <div class="match"><div class="col"><h5>Partikel</h5><div id="m-part-left"></div></div><div class="col"><h5>Funktion</h5><div id="m-part-right"></div></div></div>
+    <div class="btns">
+      <button class="b primary" onclick="checkMatch('part')">Prüfen</button>
+      <button class="b" onclick="solveMatch('part')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetMatch('part')">Zurücksetzen</button>
+      <span class="score hidden" id="s-part"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4. WORTSCHATZ ===================== -->
+<section class="view" id="v4">
+  <h2>Wortschatz</h2>
+  <p class="lede">Dos campos: la amistad y las relaciones, y el conflicto y la discusión. Las traducciones están ocultas para que puedas autoevaluarte.</p>
+  <div class="vtoggle"><button class="b" onclick="toggleEs(this)">Traducciones: mostrar todas</button></div>
+
+  <h3><span class="num">A</span>Freundschaft und Beziehungen</h3>
+  <div class="vgrid" id="vg-w1"></div>
+
+  <h3><span class="num">B</span>Streit und Konflikt</h3>
+  <div class="vgrid" id="vg-w2"></div>
+
+  <h3><span class="num">C</span>Verben und Ausdrücke</h3>
+  <div class="vgrid" id="vg-w3"></div>
+
+  <div class="ex-block" id="ex10">
+    <div class="ex-head"><span class="tag">Übung 10</span><h4>Wortschatz ergänzen</h4></div>
+    <ol class="q">
+      <li>Nach dem Studium haben wir uns leider aus den <input class="gap" data-answer="augen"> verloren.</li>
+      <li>Ein echter Freund hilft dir, wenn du Probleme hast — auf ihn kann man sich <input class="gap" data-answer="verlassen">.</li>
+      <li>Wir haben oft verschiedene Meinungen, aber am Ende finden wir immer einen <input class="gap" data-answer="kompromiss">.</li>
+      <li>Statt zu schreien, sollte man ruhig und <input class="gap" data-answer="diplomatisch"> bleiben.</li>
+      <li>Meine Mitbewohnerin und ich <input class="gap" data-answer="streiten"> uns manchmal, aber nach zehn Minuten ist alles vergessen.</li>
+      <li>In einer guten Freundschaft muss mal der eine, mal der andere <input class="gap" data-answer="nachgeben">.</li>
+      <li>Wir sind schon seit der Schule <input class="gap" data-answer="befreundet">.</li>
+      <li>Nach dem langen Arbeitstag war sie völlig <input class="gap" data-answer="erschöpft|erschoepft">.</li>
+      <li>Man sollte nicht jedes Wort auf die <input class="gap" data-answer="goldwaage"> legen.</li>
+      <li>Wir haben uns nach dem Streit wieder <input class="gap" data-answer="vertragen">.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex10')">Prüfen</button>
+      <button class="b" onclick="showSol('ex10')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex10')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex10"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex11">
+    <div class="ex-head"><span class="tag b">Übung 11</span><h4>Diplomatisch oder undiplomatisch?</h4></div>
+    <p class="ex-hint">En una discusión, ¿la frase suena conciliadora (+) o agresiva (–)?</p>
+    <ol class="q">
+      <li>Wir finden bestimmt einen Kompromiss.
+        <span class="mc" data-correct="d"><label><input type="radio" name="q11a" value="d"><span>+ diplomatisch</span></label><label><input type="radio" name="q11a" value="u"><span>– undiplomatisch</span></label></span></li>
+      <li>Immer das Gleiche mit dir!
+        <span class="mc" data-correct="u"><label><input type="radio" name="q11b" value="d"><span>+ diplomatisch</span></label><label><input type="radio" name="q11b" value="u"><span>– undiplomatisch</span></label></span></li>
+      <li>Ich kann dich ja gut verstehen.
+        <span class="mc" data-correct="d"><label><input type="radio" name="q11c" value="d"><span>+ diplomatisch</span></label><label><input type="radio" name="q11c" value="u"><span>– undiplomatisch</span></label></span></li>
+      <li>Jetzt übertreibst du aber!
+        <span class="mc" data-correct="u"><label><input type="radio" name="q11d" value="d"><span>+ diplomatisch</span></label><label><input type="radio" name="q11d" value="u"><span>– undiplomatisch</span></label></span></li>
+      <li>Das ist ja nicht so schlimm.
+        <span class="mc" data-correct="d"><label><input type="radio" name="q11e" value="d"><span>+ diplomatisch</span></label><label><input type="radio" name="q11e" value="u"><span>– undiplomatisch</span></label></span></li>
+      <li>Das nervt mich wirklich!
+        <span class="mc" data-correct="u"><label><input type="radio" name="q11f" value="d"><span>+ diplomatisch</span></label><label><input type="radio" name="q11f" value="u"><span>– undiplomatisch</span></label></span></li>
+      <li>Sei mir bitte nicht böse.
+        <span class="mc" data-correct="d"><label><input type="radio" name="q11g" value="d"><span>+ diplomatisch</span></label><label><input type="radio" name="q11g" value="u"><span>– undiplomatisch</span></label></span></li>
+      <li>Reg dich doch nicht gleich so auf!
+        <span class="mc" data-correct="u"><label><input type="radio" name="q11h" value="d"><span>+ diplomatisch</span></label><label><input type="radio" name="q11h" value="u"><span>– undiplomatisch</span></label></span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex11')">Prüfen</button>
+      <button class="b ghost" onclick="resetBlock('ex11')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex11"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5. REDEMITTEL ===================== -->
+<section class="view" id="v5">
+  <h2>Redemittel und Sprichwörter</h2>
+  <p class="lede">Frases hechas para destacar lo que te importa y para discutir con diplomacia, más algunos refranes alemanes sobre amistad y conflicto.</p>
+
+  <div class="cols2">
+    <div class="card">
+      <h3 style="margin-top:0;color:var(--accent)">Etwas hervorheben</h3>
+      <ul class="phrases">
+        <li>Im Gegensatz zu … finde ich … <span class="cue">— A diferencia de…, yo creo…</span></li>
+        <li>An … schätze ich vor allem … <span class="cue">— De… valoro sobre todo…</span></li>
+        <li>Für mich spielt … eine große Rolle. <span class="cue">— Para mí… es muy importante.</span></li>
+        <li>Besonders wichtig ist für mich …, weil … <span class="cue">— Especialmente importante para mí es…, porque…</span></li>
+        <li>… finde ich am wichtigsten, denn … <span class="cue">— … es lo que más importante me parece, porque…</span></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0;color:var(--ok)">Konfliktgespräche — diplomatisch</h3>
+      <ul class="phrases">
+        <li>Sei mir bitte nicht böse.</li>
+        <li>Das ist ja nicht so schlimm.</li>
+        <li>Wir finden bestimmt einen Kompromiss.</li>
+        <li>Ich kann dich ja gut verstehen.</li>
+        <li>Ich wünsche mir, dass …</li>
+      </ul>
+      <h3 style="color:var(--bad)">… undiplomatisch</h3>
+      <ul class="phrases">
+        <li>Jetzt übertreibst du aber!</li>
+        <li>Immer das Gleiche mit dir!</li>
+        <li>Das kann echt nicht wahr sein!</li>
+        <li>Reg dich doch nicht gleich so auf!</li>
+        <li>Das nervt mich wirklich!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Truco diplomático.</b> Las frases con <strong>Ich-Aussagen</strong> («mensajes yo»: <i>Ich wünsche mir…, Ich finde…</i>) suenan mucho mejor que los reproches con <i>du</i> (<i>Du machst immer…</i>). Cambiar «tú siempre haces» por «a mí me gustaría» desactiva media discusión.
+  </div>
+
+  <h3><span class="num">A</span>Sprichwörter</h3>
+  <div class="card flat">
+    <ul class="phrases">
+      <li><span class="de">Wenn zwei sich streiten, freut sich der Dritte.</span> <span class="cue">— Cuando dos se pelean, el tercero gana. (≈ a río revuelto, ganancia de pescadores)</span></li>
+      <li><span class="de">Wer zuletzt lacht, lacht am besten.</span> <span class="cue">— Quien ríe el último, ríe mejor.</span></li>
+      <li><span class="de">Der Klügere gibt nach.</span> <span class="cue">— El más listo es el que cede.</span></li>
+      <li><span class="de">Reden ist Silber, Schweigen ist Gold.</span> <span class="cue">— Hablar es plata, callar es oro.</span></li>
+      <li><span class="de">In der Not erkennt man den Freund.</span> <span class="cue">— En la necesidad se conoce al amigo.</span></li>
+      <li><span class="de">Geteiltes Leid ist halbes Leid.</span> <span class="cue">— Las penas compartidas pesan la mitad.</span></li>
+    </ul>
+  </div>
+
+  <div class="ex-block" id="ex12">
+    <div class="ex-head"><span class="tag">Übung 12</span><h4>Redemittel ergänzen</h4></div>
+    <ol class="q">
+      <li>Im <input class="gap" data-answer="gegensatz"> zu dir finde ich das Thema sehr wichtig.</li>
+      <li>An meinen Freunden <input class="gap" data-answer="schätze|schaetze"> ich vor allem die Ehrlichkeit.</li>
+      <li>Ehrlichkeit <input class="gap" data-answer="spielt"> für mich eine große Rolle.</li>
+      <li>Ich <input class="gap" data-answer="wünsche|wuensche"> mir, dass wir ruhiger miteinander reden.</li>
+      <li>Wir finden bestimmt einen <input class="gap" data-answer="kompromiss">.</li>
+      <li>Sei mir bitte nicht <input class="gap" data-answer="böse|boese">.</li>
+      <li>Vertrauen finde ich am <input class="gap" data-answer="wichtigsten">, denn ohne Vertrauen gibt es keine Freundschaft.</li>
+      <li>Besonders <input class="gap" data-answer="wichtig"> ist für mich, dass man sich aufeinander verlassen kann.</li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('ex12')">Prüfen</button>
+      <button class="b" onclick="showSol('ex12')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex12')">Zurücksetzen</button>
+      <span class="score hidden" id="s-ex12"></span>
+    </div>
+  </div>
+
+  <div class="ex-block" id="ex13">
+    <div class="ex-head"><span class="tag g">Übung 13</span><h4>Schreibtraining</h4></div>
+    <p class="ex-hint">No se corrige solo: compara con el modelo. Intenta meter en cada respuesta al menos un Nebensatz temporal o un Plusquamperfekt.</p>
+    <ol class="q">
+      <li>Beschreibe, wie du deinen besten Freund / deine beste Freundin kennengelernt hast:
+        <textarea class="gap" rows="2" data-answer="__free__"></textarea>
+        <span class="sol">Modelo: Nachdem ich an die Uni gekommen war, kannte ich niemanden. Aber während einer Vorlesung habe ich meinen besten Freund kennengelernt. Seitdem machen wir fast alles zusammen.</span></li>
+      <li>Was ist für dich in einer Freundschaft am wichtigsten? Warum?
+        <textarea class="gap" rows="2" data-answer="__free__"></textarea>
+        <span class="sol">Modelo: Für mich spielt Vertrauen eine große Rolle. Ehrlichkeit finde ich am wichtigsten, denn echte Freunde sagen dir auch, wenn du einen Fehler machst.</span></li>
+      <li>Beschreibe einen Streit und wie ihr ihn gelöst habt (im Plusquamperfekt / mit nachdem):
+        <textarea class="gap" rows="2" data-answer="__free__"></textarea>
+        <span class="sol">Modelo: Wir hatten uns über eine Kleinigkeit gestritten. Nachdem wir beide ruhig geworden waren, haben wir einen Kompromiss gefunden. Seitdem legen wir nicht mehr jedes Wort auf die Goldwaage.</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b" onclick="showSol('ex13')">Modelle zeigen</button>
+      <button class="b ghost" onclick="resetBlock('ex13')">Zurücksetzen</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6. KARTEIKARTEN ===================== -->
+<section class="view" id="v6">
+  <h2>Karteikarten</h2>
+  <p class="lede">Las que marques como sabidas desaparecen hasta que reinicies; las falladas vuelven más adelante en posición aleatoria.</p>
+
+  <div class="card">
+    <div class="fc-setup">
+      <div class="fgroup">
+        <span class="flbl">Mazos</span>
+        <div class="chips" id="deck-chips">
+          <button class="chip on" data-deck="freundschaft">Freundschaft</button>
+          <button class="chip on" data-deck="streit">Streit</button>
+          <button class="chip" data-deck="verben">Verben</button>
+          <button class="chip" data-deck="grammatik">Grammatik</button>
+          <button class="chip" data-deck="partikeln">Modalpartikeln</button>
+          <button class="chip" data-deck="sprichwort">Sprichwörter</button>
+        </div>
+      </div>
+      <div class="fgroup">
+        <span class="flbl">Dirección</span>
+        <div class="chips" id="dir-chips">
+          <button class="chip on" data-dir="de-es">DE → ES</button>
+          <button class="chip" data-dir="es-de">ES → DE</button>
+          <button class="chip" data-dir="mix">Mezclado</button>
+        </div>
+      </div>
+      <div class="fgroup">
+        <span class="flbl">&nbsp;</span>
+        <button class="b primary" onclick="startDeck()" style="padding:9px 20px">Starten</button>
+      </div>
+    </div>
+    <p class="ex-hint" style="margin:0">Atajos: <span class="kbd">Espacio</span> girar · <span class="kbd">1</span> no la sé · <span class="kbd">2</span> la sé</p>
+  </div>
+
+  <div class="fc-stage" id="fc-stage">
+    <div class="pbar"><i id="fc-bar"></i></div>
+    <div class="fc-meta"><span id="fc-left">—</span><span id="fc-known">—</span></div>
+    <div class="flashcard" id="fc-card" onclick="flipCard()">
+      <span class="fc-dir" id="fc-dirlbl"></span>
+      <button class="spk fc-spk" id="fc-spk" onclick="event.stopPropagation();speakCurrent()">🔊</button>
+      <div class="fc-front" id="fc-front"></div>
+      <div class="fc-back hidden" id="fc-back"></div>
+      <div class="fc-tap" id="fc-tap">Haz clic para ver la respuesta</div>
+    </div>
+    <div class="fc-actions hidden" id="fc-actions">
+      <button class="fc-no" onclick="answerCard(false)">✗ No la sé</button>
+      <button class="fc-yes" onclick="answerCard(true)">✓ La sé</button>
+    </div>
+    <div class="btns"><button class="b ghost" onclick="startDeck()">Neu starten</button></div>
+  </div>
+
+  <div class="fc-done hidden" id="fc-done">
+    <div class="big">Geschafft! 🎉</div>
+    <p class="lede" style="margin:0 auto 18px" id="fc-done-txt"></p>
+    <button class="b primary" onclick="startDeck()">Noch einmal</button>
+  </div>
+</section>
+
+<!-- ===================== 7. MINI-TEST ===================== -->
+<section class="view" id="v7">
+  <h2>Mini-Test</h2>
+  <p class="lede">15 preguntas mezcladas de todo el capítulo. Hazlo sin mirar las otras pestañas.</p>
+
+  <div class="ex-block" id="test">
+    <ol class="q">
+      <li>Ich <input class="gap w-s" data-answer="hatte"> das Buch schon gelesen, als der Film kam. <span class="cue">(haben/sein)</span></li>
+      <li>Sie <input class="gap w-s" data-answer="war"> nach Berlin gezogen. <span class="cue">(haben/sein)</span></li>
+      <li>Wir <input class="gap w-s" data-answer="hatten"> uns lange nicht gesehen. <span class="cue">(haben/sein)</span></li>
+      <li>Nachdem ich <input class="gap" data-answer="gegessen hatte">, ging ich spazieren. <span class="cue">(essen · Hauptsatz Präteritum)</span></li>
+      <li>Nachdem ich mein Studium <input class="gap" data-answer="beendet habe">, suche ich einen Job. <span class="cue">(beenden · Hauptsatz Präsens)</span></li>
+      <li>___ ich schlafen gehe, lese ich ein Buch.
+        <span class="mc" data-correct="bevor"><label><input type="radio" name="t6" value="bevor"><span>Bevor</span></label><label><input type="radio" name="t6" value="nachdem"><span>Nachdem</span></label><label><input type="radio" name="t6" value="bis"><span>Bis</span></label></span></li>
+      <li>Wir warten, ___ du zurückkommst.
+        <span class="mc" data-correct="bis"><label><input type="radio" name="t7" value="bis"><span>bis</span></label><label><input type="radio" name="t7" value="seit"><span>seit</span></label><label><input type="radio" name="t7" value="bevor"><span>bevor</span></label></span></li>
+      <li>___ ich hier wohne, habe ich viele Freunde.
+        <span class="mc" data-correct="seit"><label><input type="radio" name="t8" value="seit"><span>Seit</span></label><label><input type="radio" name="t8" value="bis"><span>Bis</span></label><label><input type="radio" name="t8" value="bevor"><span>Bevor</span></label></span></li>
+      <li>Wann kommt sie <input class="gap w-s" data-answer="denn">? <span class="cue">(Modalpartikel: interés)</span></li>
+      <li>Er ist <input class="gap w-s" data-answer="wohl"> krank. <span class="cue">(Modalpartikel: suposición)</span></li>
+      <li>Nach dem Studium haben wir uns aus den <input class="gap" data-answer="augen"> verloren.</li>
+      <li>Statt zu schreien, blieb sie ruhig und <input class="gap" data-answer="diplomatisch">.</li>
+      <li>Wir haben verschiedene Meinungen, aber wir finden einen <input class="gap" data-answer="kompromiss">.</li>
+      <li>In einer Freundschaft muss manchmal einer <input class="gap" data-answer="nachgeben">. <span class="cue">(ceder)</span></li>
+      <li>Wir sind schon seit der Schule <input class="gap" data-answer="befreundet">. <span class="cue">(ser amigos)</span></li>
+    </ol>
+    <div class="btns">
+      <button class="b primary" onclick="checkBlock('test')">Test auswerten</button>
+      <button class="b" onclick="showSol('test')">Lösung zeigen</button>
+      <button class="b ghost" onclick="resetBlock('test')">Neu starten</button>
+      <span class="score hidden" id="s-test"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Checkliste vor der Prüfung</h3>
+    <ul class="phrases">
+      <li>¿Formo el Plusquamperfekt con <i>hatte/war</i> (en Präteritum) + Partizip II al final?</li>
+      <li>¿Elijo bien <i>haben</i> o <i>sein</i>, con las mismas reglas que el Perfekt?</li>
+      <li>¿Sé qué expresa cada conjunción: <i>bevor, nachdem, während, bis, seit/seitdem</i>?</li>
+      <li>¿Aplico el cambio de tiempo con <i>nachdem</i> (Präsens→Perfekt, Präteritum→Plusquamperfekt)?</li>
+      <li>¿Mando el verbo conjugado al final del Nebensatz y pongo la coma?</li>
+      <li>¿Reconozco la función de <i>aber, denn, ja, mal, wohl</i>?</li>
+      <li>¿Puedo destacar lo importante con los Redemittel (<i>Für mich spielt … eine große Rolle</i>)?</li>
+      <li>¿Sé discutir en tono diplomático con Ich-Aussagen en vez de reproches con <i>du</i>?</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  Material de estudio de alemán B1 · contenido de elaboración propia (explicaciones, ejemplos y ejercicios originales).
+</footer>
+</div>
+
+<button class="theme-btn" id="themeBtn" title="Modo claro / oscuro">◐</button>
+
+<script>
+/* ===================== DATOS ===================== */
+const VOC={
+w1:[
+["der Freund, -e","el amigo"],
+["die Freundin, -nen","la amiga"],
+["der/die Bekannte, -n","el conocido / la conocida"],
+["die Freundschaft, -en","la amistad"],
+["befreundet sein (mit)","ser amigo (de)"],
+["die Clique, -n","el grupo de amigos, la pandilla"],
+["echt","de verdad, auténtico"],
+["jemanden kennenlernen","conocer a alguien"],
+["sich gut verstehen (mit)","llevarse bien (con)"],
+["sich aus den Augen verlieren","perder el contacto"],
+["sich treffen","quedar, verse"],
+["etwas unternehmen","hacer algo (planes, actividades)"],
+["sich gegenseitig helfen","ayudarse mutuamente"],
+["sich verlassen auf (+Akk)","confiar en, contar con"],
+["jemandem vertrauen","confiar en alguien"],
+["die Beziehung, -en","la relación"],
+["der/die Verwandte, -n","el/la pariente"],
+["gemeinsam","en común, juntos"],
+["einsam","solo, solitario"],
+["die WG (Wohngemeinschaft)","el piso compartido"],
+["zusammenwohnen","vivir juntos"],
+["zusammenziehen","mudarse juntos"],
+["sich verändern","cambiar (uno mismo)"]
+],
+w2:[
+["der Streit","la pelea, la discusión"],
+["sich streiten (mit/über)","pelearse, discutir"],
+["der Konflikt, -e","el conflicto"],
+["der Kompromiss, -e","el acuerdo, el compromiso"],
+["sich einigen (auf)","ponerse de acuerdo"],
+["nachgeben","ceder"],
+["tolerant","tolerante"],
+["diplomatisch","diplomático"],
+["die Harmonie","la armonía"],
+["genervt sein","estar harto, irritado"],
+["erschöpft","agotado"],
+["etwas auf die Goldwaage legen","tomarse algo muy a pecho"],
+["die Kritik","la crítica"],
+["die Ich-Aussage, -n","el mensaje en primera persona"],
+["der Vorwurf, ⸚e","el reproche"],
+["sich entschuldigen","disculparse"],
+["schweigen","callar"],
+["übertreiben","exagerar"],
+["sich aufregen (über)","alterarse, enfadarse"],
+["recht haben","tener razón"],
+["böse sein (auf)","estar enfadado (con)"],
+["sich vertragen","reconciliarse, llevarse bien"],
+["nerven","molestar, sacar de quicio"]
+],
+w3:[
+["hervorheben","destacar, resaltar"],
+["schätzen","apreciar, valorar"],
+["eine Rolle spielen","ser importante, contar"],
+["akzeptieren","aceptar"],
+["vermeiden","evitar"],
+["gelingen","salir bien, lograrse"],
+["erleichtern","facilitar"],
+["sich wohlfühlen","sentirse a gusto"],
+["umziehen","mudarse"],
+["ankommen","llegar"],
+["einschlafen","dormirse"],
+["aufstehen","levantarse"],
+["beenden","terminar, acabar"],
+["bestehen (Prüfung)","aprobar (un examen)"],
+["wechseln","cambiar (de trabajo, etc.)"],
+["sich versöhnen","reconciliarse"]
+],
+grammatik:[
+["Ich hatte gegessen","había comido (Plusquamperfekt con haben)"],
+["Sie war gegangen","ella había ido (Plusquamperfekt con sein)"],
+["hatte + Partizip II","había + participio (verbos con haben)"],
+["war + Partizip II","había + participio (movimiento / cambio de estado)"],
+["bevor","antes de que — la principal pasa primero"],
+["nachdem","después de que — la subordinada ya terminó"],
+["während","mientras — las dos a la vez"],
+["bis","hasta que"],
+["seit / seitdem","desde que (y sigue)"],
+["Nachdem ich gegessen hatte, ging ich","Präteritum en la principal → Plusquamperfekt tras nachdem"],
+["Nachdem ich gegessen habe, gehe ich","Präsens en la principal → Perfekt tras nachdem"]
+],
+partikeln:[
+["aber (Modalpartikel)","sorpresa — Das ist aber schön!"],
+["denn (Modalpartikel)","interés, solo en preguntas — Wo warst du denn?"],
+["ja (Modalpartikel)","conocimiento compartido — Das weißt du ja."],
+["mal (Modalpartikel)","suaviza una petición — Komm mal her!"],
+["wohl (Modalpartikel)","suposición — Er ist wohl krank."]
+],
+sprichwort:[
+["Wenn zwei sich streiten, freut sich der Dritte.","Cuando dos se pelean, el tercero gana."],
+["Wer zuletzt lacht, lacht am besten.","Quien ríe el último, ríe mejor."],
+["Der Klügere gibt nach.","El más listo es el que cede."],
+["Reden ist Silber, Schweigen ist Gold.","Hablar es plata, callar es oro."],
+["In der Not erkennt man den Freund.","En la necesidad se conoce al amigo."],
+["Geteiltes Leid ist halbes Leid.","Las penas compartidas pesan la mitad."]
+]
+};
+
+const MATCH_DATA={
+  temp:{
+    left:[
+      "Bevor ich das Haus verlasse, …",
+      "Nachdem wir uns gestritten hatten, …",
+      "Während du telefonierst, …",
+      "Wir bleiben hier, bis …",
+      "Seit ich in dieser Stadt wohne, …"
+    ],
+    right:[
+      ["A","… koche ich schon mal das Essen."],
+      ["B","… schließe ich immer alle Fenster."],
+      ["C","… sprachen wir eine Woche nicht."],
+      ["D","… habe ich viele neue Freunde."],
+      ["E","… das Konzert zu Ende ist."]
+    ],
+    key:{0:"B",1:"C",2:"A",3:"E",4:"D"}
+  },
+  part:{
+    left:["aber","denn","ja","mal","wohl"],
+    right:[
+      ["A","Überraschung — „Das ist aber schön!“"],
+      ["B","Interesse, nur in Fragen — „Wo warst du denn?“"],
+      ["C","gemeinsames Wissen — „Das weißt du ja.“"],
+      ["D","freundliche Aufforderung — „Komm mal her!“"],
+      ["E","Vermutung — „Er ist wohl krank.“"]
+    ],
+    key:{0:"A",1:"B",2:"C",3:"D",4:"E"}
+  }
+};
+
+/* ===================== UTIL ===================== */
+function norm(s){
+  return (s||"").toString().trim().toLowerCase()
+    .replace(/ß/g,"ss")
+    .replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue")
+    .replace(/[.,;:!¡?¿"'’„“]/g,"")
+    .replace(/[–—]/g,"-")
+    .replace(/\s+/g," ").trim();
+}
+function accepts(i){return (i.dataset.answer||"").split("|").map(norm)}
+function speak(t){
+  try{
+    if(!("speechSynthesis" in window))return;
+    const u=new SpeechSynthesisUtterance(String(t).split("—")[0].replace(/\(.*?\)/g,"").replace(/[,⸚]/g," "));
+    u.lang="de-DE";u.rate=.88;speechSynthesis.cancel();speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+/* ===================== TABS ===================== */
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest(".tab");if(!b)return;
+  document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
+  document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
+  b.classList.add("active");
+  document.getElementById(b.dataset.view).classList.add("active");
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+document.addEventListener("click",e=>{
+  const t=e.target.closest(".tt");
+  document.querySelectorAll(".tt.show").forEach(x=>{if(x!==t)x.classList.remove("show")});
+  if(t)t.classList.toggle("show");
+});
+
+/* ===================== EJERCICIOS ===================== */
+function checkBlock(id){
+  const root=document.getElementById(id);let ok=0,total=0;
+  root.querySelectorAll("input.gap, textarea.gap").forEach(inp=>{
+    if(inp.dataset.answer==="__free__")return;
+    total++;inp.classList.remove("ok","bad");
+    const v=norm(inp.value);
+    if(v&&accepts(inp).includes(v)){inp.classList.add("ok");ok++}else inp.classList.add("bad");
+  });
+  root.querySelectorAll(".mc").forEach(mc=>{
+    total++;mc.classList.add("graded");
+    const c=mc.dataset.correct;let got=false;
+    mc.querySelectorAll("label").forEach(lb=>{
+      lb.classList.remove("ok","bad");
+      const i=lb.querySelector("input");
+      if(i.value===c)lb.classList.add("ok");
+      if(i.checked&&i.value!==c)lb.classList.add("bad");
+      if(i.checked&&i.value===c)got=true;
+    });
+    if(got)ok++;
+  });
+  const s=document.getElementById("s-"+id);
+  if(s){
+    s.classList.remove("hidden","good","mid","poor");
+    const p=total?Math.round(ok/total*100):0;
+    s.textContent=ok+" / "+total+"  ·  "+p+"%";
+    s.classList.add(p>=80?"good":p>=50?"mid":"poor");
+  }
+}
+function showSol(id){
+  const root=document.getElementById(id);
+  root.querySelectorAll("input.gap, textarea.gap").forEach(i=>{
+    if(i.dataset.answer==="__free__")return;
+    i.value=(i.dataset.answer||"").split("|")[0];
+    i.classList.remove("bad");i.classList.add("ok");
+  });
+  root.querySelectorAll(".sol").forEach(s=>s.classList.add("show"));
+  root.querySelectorAll(".mc").forEach(mc=>{
+    mc.classList.add("graded");
+    mc.querySelectorAll("label").forEach(lb=>{
+      lb.classList.remove("bad");
+      if(lb.querySelector("input").value===mc.dataset.correct)lb.classList.add("ok");
+    });
+  });
+}
+function resetBlock(id){
+  const root=document.getElementById(id);
+  root.querySelectorAll("input.gap, textarea.gap").forEach(i=>{i.value="";i.classList.remove("ok","bad")});
+  root.querySelectorAll(".sol").forEach(s=>s.classList.remove("show"));
+  root.querySelectorAll(".mc").forEach(mc=>{
+    mc.classList.remove("graded");
+    mc.querySelectorAll("label").forEach(lb=>lb.classList.remove("ok","bad"));
+    mc.querySelectorAll("input").forEach(i=>i.checked=false);
+  });
+  const s=document.getElementById("s-"+id);if(s)s.classList.add("hidden");
+}
+
+/* ===================== MATCHING ===================== */
+const M={};
+function initMatch(key){
+  const d=MATCH_DATA[key];
+  M[key]={sel:null,pairs:{}};
+  const L=document.getElementById("m-"+key+"-left"),R=document.getElementById("m-"+key+"-right");
+  L.innerHTML="";R.innerHTML="";
+  d.left.forEach((txt,i)=>{
+    const b=document.createElement("button");
+    b.className="mitem";b.dataset.i=i;
+    b.innerHTML='<span class="idx">'+(i+1)+'</span><span>'+txt+'</span><span class="slot">?</span>';
+    b.onclick=()=>{M[key].sel=(M[key].sel===i)?null:i;paintMatch(key)};
+    L.appendChild(b);
+  });
+  d.right.forEach(([l,txt])=>{
+    const b=document.createElement("button");
+    b.className="mitem";b.dataset.l=l;
+    b.innerHTML='<span class="idx">'+l+'</span><span>'+txt+'</span>';
+    b.onclick=()=>pickRight(key,l);
+    R.appendChild(b);
+  });
+  paintMatch(key);
+}
+function pickRight(key,letter){
+  const st=M[key];
+  for(const k in st.pairs)if(st.pairs[k]===letter)delete st.pairs[k];
+  if(st.sel!==null){st.pairs[st.sel]=letter;st.sel=null}
+  paintMatch(key);
+}
+function paintMatch(key){
+  const st=M[key];
+  document.querySelectorAll("#m-"+key+"-left .mitem").forEach(el=>{
+    const i=+el.dataset.i;
+    el.classList.toggle("sel",st.sel===i);
+    el.classList.remove("ok","bad");
+    const slot=el.querySelector(".slot");
+    if(st.pairs[i]){slot.textContent=st.pairs[i];slot.classList.add("filled")}
+    else{slot.textContent="?";slot.classList.remove("filled")}
+  });
+  const used=Object.values(st.pairs);
+  document.querySelectorAll("#m-"+key+"-right .mitem").forEach(el=>{
+    el.classList.toggle("used",used.includes(el.dataset.l));
+    el.classList.remove("ok","bad");
+  });
+}
+function checkMatch(key){
+  const st=M[key],d=MATCH_DATA[key];let ok=0;
+  const n=d.left.length;
+  document.querySelectorAll("#m-"+key+"-left .mitem").forEach(el=>{
+    const i=+el.dataset.i;
+    el.classList.remove("ok","bad","sel");
+    if(st.pairs[i]===d.key[i]){el.classList.add("ok");ok++}else el.classList.add("bad");
+  });
+  const s=document.getElementById("s-"+key);
+  s.classList.remove("hidden","good","mid","poor");
+  const p=Math.round(ok/n*100);
+  s.textContent=ok+" / "+n+"  ·  "+p+"%";
+  s.classList.add(p>=80?"good":p>=50?"mid":"poor");
+}
+function solveMatch(key){
+  const st=M[key],d=MATCH_DATA[key];
+  st.pairs={};Object.keys(d.key).forEach(k=>st.pairs[k]=d.key[k]);
+  st.sel=null;paintMatch(key);
+  document.querySelectorAll("#m-"+key+"-left .mitem").forEach(el=>el.classList.add("ok"));
+}
+function resetMatch(key){
+  M[key].pairs={};M[key].sel=null;paintMatch(key);
+  document.getElementById("s-"+key).classList.add("hidden");
+}
+
+/* ===================== VOCAB ===================== */
+function renderVocab(id,list){
+  const c=document.getElementById(id);if(!c)return;c.innerHTML="";
+  list.forEach(([de,es])=>{
+    const d=document.createElement("div");d.className="vitem";
+    d.innerHTML='<span class="w"><span class="tt" data-es="'+es.replace(/"/g,"&quot;")+'">'+de+'</span><span class="es">'+es+'</span></span>';
+    const b=document.createElement("button");b.className="spk";b.textContent="🔊";b.title="Aussprache";
+    b.onclick=()=>speak(de);d.appendChild(b);c.appendChild(d);
+  });
+}
+function toggleEs(btn){
+  const view=btn.closest(".view"),grids=view.querySelectorAll(".vgrid");
+  const on=!grids[0].classList.contains("show-es");
+  grids.forEach(g=>g.classList.toggle("show-es",on));
+  view.querySelectorAll(".vtoggle .b").forEach(b=>{b.textContent=on?"Traducciones: ocultar todas":"Traducciones: mostrar todas"});
+}
+
+/* ===================== KARTEIKARTEN ===================== */
+const DECK_MAP={
+  freundschaft:VOC.w1, streit:VOC.w2, verben:VOC.w3,
+  grammatik:VOC.grammatik, partikeln:VOC.partikeln, sprichwort:VOC.sprichwort
+};
+let fcQueue=[],fcKnown=0,fcTotal=0,fcFlipped=false,fcCurrent=null;
+let selDecks=new Set(["freundschaft","streit"]),selDir="de-es";
+
+document.getElementById("deck-chips").addEventListener("click",e=>{
+  const b=e.target.closest(".chip");if(!b)return;
+  const d=b.dataset.deck;
+  if(selDecks.has(d)){if(selDecks.size>1){selDecks.delete(d);b.classList.remove("on")}}
+  else{selDecks.add(d);b.classList.add("on")}
+});
+document.getElementById("dir-chips").addEventListener("click",e=>{
+  const b=e.target.closest(".chip");if(!b)return;
+  selDir=b.dataset.dir;
+  document.querySelectorAll("#dir-chips .chip").forEach(c=>c.classList.remove("on"));
+  b.classList.add("on");
+});
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function startDeck(){
+  let pool=[];selDecks.forEach(d=>{(DECK_MAP[d]||[]).forEach(([de,es])=>pool.push({de,es}))});
+  const seen=new Set();
+  pool=pool.filter(c=>{if(seen.has(c.de))return false;seen.add(c.de);return true});
+  fcQueue=shuffle(pool);fcTotal=fcQueue.length;fcKnown=0;
+  document.getElementById("fc-done").classList.add("hidden");
+  document.getElementById("fc-stage").classList.remove("hidden");
+  nextCard();
+}
+function nextCard(){
+  if(fcQueue.length===0)return finishDeck();
+  fcCurrent=fcQueue[0];
+  fcCurrent.dir=selDir==="mix"?(Math.random()<.5?"de-es":"es-de"):selDir;
+  fcFlipped=false;
+  const d2e=fcCurrent.dir==="de-es";
+  document.getElementById("fc-front").textContent=d2e?fcCurrent.de:fcCurrent.es;
+  document.getElementById("fc-back").textContent=d2e?fcCurrent.es:fcCurrent.de;
+  document.getElementById("fc-dirlbl").textContent=d2e?"Deutsch → Español":"Español → Deutsch";
+  document.getElementById("fc-back").classList.add("hidden");
+  document.getElementById("fc-tap").classList.remove("hidden");
+  document.getElementById("fc-actions").classList.add("hidden");
+  document.getElementById("fc-spk").style.visibility=d2e?"visible":"hidden";
+  updateMeta();
+}
+function flipCard(){
+  if(!fcCurrent||fcFlipped)return;
+  fcFlipped=true;
+  document.getElementById("fc-back").classList.remove("hidden");
+  document.getElementById("fc-tap").classList.add("hidden");
+  document.getElementById("fc-actions").classList.remove("hidden");
+  document.getElementById("fc-spk").style.visibility="visible";
+}
+function answerCard(known){
+  if(!fcCurrent)return;
+  const card=fcQueue.shift();
+  if(known)fcKnown++;
+  else{
+    const min=Math.min(3,fcQueue.length);
+    const pos=min+Math.floor(Math.random()*Math.max(1,fcQueue.length-min+1));
+    fcQueue.splice(Math.min(pos,fcQueue.length),0,card);
+  }
+  nextCard();
+}
+function updateMeta(){
+  document.getElementById("fc-left").textContent="Quedan: "+fcQueue.length;
+  document.getElementById("fc-known").textContent="Sabidas: "+fcKnown+" / "+fcTotal;
+  document.getElementById("fc-bar").style.width=(fcTotal?fcKnown/fcTotal*100:0)+"%";
+}
+function finishDeck(){
+  fcCurrent=null;
+  document.getElementById("fc-stage").classList.add("hidden");
+  document.getElementById("fc-done").classList.remove("hidden");
+  document.getElementById("fc-done-txt").textContent="Has dominado las "+fcTotal+" tarjetas de esta ronda.";
+}
+function speakCurrent(){if(fcCurrent)speak(fcCurrent.de)}
+document.addEventListener("keydown",e=>{
+  if(!document.getElementById("v6").classList.contains("active"))return;
+  if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA")return;
+  if(e.code==="Space"){e.preventDefault();flipCard()}
+  if(e.key==="1"&&fcFlipped)answerCard(false);
+  if(e.key==="2"&&fcFlipped)answerCard(true);
+});
+
+/* ===================== TEMA ===================== */
+const tb=document.getElementById("themeBtn");
+try{const s=localStorage.getItem("de-theme");if(s)document.documentElement.setAttribute("data-theme",s)}catch(e){}
+tb.onclick=()=>{
+  const c=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
+  document.documentElement.setAttribute("data-theme",c);
+  try{localStorage.setItem("de-theme",c)}catch(e){}
+};
+
+/* ===================== INIT ===================== */
+renderVocab("vg-w1",VOC.w1);
+renderVocab("vg-w2",VOC.w2);
+renderVocab("vg-w3",VOC.w3);
+initMatch("temp");
+initMatch("part");
+startDeck();
+</script>
+</body>
+</html>
